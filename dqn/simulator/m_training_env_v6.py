@@ -184,8 +184,10 @@ class Env():
         c_even = self.event[0]
         cur_time = self.event[0][0]
         cur_path = self.event[0][4]
-        print(cur_time, ", DOWN", ", down_id = ", down_id, ", down_quality = ", down_quality, ", buffer_size = ",
-              self.buffer_size, ", cur_path = ", cur_path)
+        # print(round(cur_time, 1), ", DOWN", ", down_id = ", down_id, ", down_quality = ", down_quality, ", buffer_size = ",
+        #       self.buffer_size, ", cur_path = ", cur_path)
+        downtrack = [round(cur_time, 1), down_id, down_quality, self.buffer_size, cur_path]
+
         self.down_segment[down_id] = down_quality
 
         segment_size = self.video_list[down_quality][down_id]  # download video segment in bytes
@@ -201,6 +203,8 @@ class Env():
         if (cur_path == PATH2):
             self.est_throughput2 = segment_size / delay
 
+
+        
         while True:
             cur_time = self.event[0][0]
             cur_path = int(self.event[0][4])
@@ -307,4 +311,4 @@ class Env():
             self.end_of_video = True
             # self.reset()
 
-        return self.state, reward, self.end_of_video, self.play_id, sum_reward
+        return self.state, reward, self.end_of_video, self.play_id, downtrack

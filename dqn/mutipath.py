@@ -4,8 +4,13 @@ from cart_pole import DQN
 import matplotlib.pyplot as plt
 
 import numpy as np
+import pandas as pd
 import datetime
 import tensorflow as tf
+
+def draw():
+    data = np.loadtxt("downtrack.csv",delimiter=',')
+    print(data)
 
 def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
     rewards = 0
@@ -13,10 +18,13 @@ def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
     done = False
     observations = env.reset()
     losses = list()
+    downtracks = []
     while not done:
         action = TrainNet.get_action(observations, epsilon)
         prev_observations = observations
-        observations, reward, done, play_id, sum_reward = env.step(action)
+        observations, reward, done, play_id, downtrack = env.step(action)
+        downtracks.append(downtrack)
+  
         rewards += reward
         if done:
             reward = -200
@@ -36,7 +44,7 @@ def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
         iter += 1
         if iter % copy_step == 0:
             TargetNet.copy_weights(TrainNet)
-    return rewards, mean(losses)
+    return rewards, mean(losses), downtracks
 
 
 
@@ -51,7 +59,7 @@ def main():
     min_experiences = 100
     batch_size = 32
     lr = 1e-2
-    current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+    current_time = datetime.datetime.now().strftime("%d%m%Y-%H%M%S")
     log_dir = 'logs/dqn/' + current_time
     summary_writer = tf.summary.create_file_writer(log_dir)
 
@@ -68,18 +76,19 @@ def main():
     for n in range(N):
         epoch.append(n)
         epsilon = max(min_epsilon, epsilon * decay)
-        total_reward, losses = play_video(env, TrainNet, TargetNet, epsilon, copy_step)
+        total_reward, losses, downtracks = play_video(env, TrainNet, TargetNet, epsilon, copy_step)
         total_rewards = np.append(total_rewards, [total_reward])
         avg_reward = total_rewards[max(0, n - 100):(n + 1)].mean()
         avg_rewards.append(avg_reward)
-        # print(len(avg_rewards))
 
         print('epoch:{} reward:{}'.format(n, total_rewards[-1]))
         if n % 100 == 0:
             plt.figure(figsize=(15,3))
-            # plt.plot(epoch, total_rewards)
+            plt.plot(epoch, total_rewards)
             plt.plot(epoch, avg_rewards)
             plt.savefig('episode{}.png'.format(n))
+            np.savetxt('downtrack.csv', downtracks,delimiter=',')  
 
 if __name__ == '__main__':
-    main()
+    # main()
+    draw()
