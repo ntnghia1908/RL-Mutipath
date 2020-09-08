@@ -1,7 +1,7 @@
 from simulator.m_training_env_v6 import Env
 from statistics import mean
 from cart_pole import DQN
-import matplotlib.pyplot as ptl
+import matplotlib.pyplot as plt
 
 import numpy as np
 import datetime
@@ -58,31 +58,28 @@ def main():
     TrainNet = DQN(num_states, num_actions, hidden_units, gamma, max_experiences, min_experiences, batch_size, lr)
     TargetNet = DQN(num_states, num_actions, hidden_units, gamma, max_experiences, min_experiences, batch_size, lr)
     N = 50000
-    total_rewards = []
+    total_rewards = np.array([])
     epsilon = 0.99
     decay = 0.9999
     min_epsilon = 0.1
-    epoces = []
+    epoch = []
+    avg_rewards = []
 
     for n in range(N):
-        epoces.append(n)
+        epoch.append(n)
         epsilon = max(min_epsilon, epsilon * decay)
         total_reward, losses = play_video(env, TrainNet, TargetNet, epsilon, copy_step)
-        total_rewards.append(total_reward)
-        # avg_rewards = total_rewards[max(0, n - 100):(n + 1)].mean()
+        total_rewards = np.append(total_rewards, [total_reward])
+        avg_reward = total_rewards[max(0, n - 100):(n + 1)].mean()
+        avg_rewards.append(avg_reward)
+        # print(len(avg_rewards))
 
-        with summary_writer.as_default():
-            tf.summary.scalar('episode reward', total_reward, step=n)
-            # tf.summary.scalar('running avg reward(100)', avg_rewards, step=n)
-            tf.summary.scalar('average loss)', losses, step=n)
-        print('epoces:{} reward:{}'.format(n, total_rewards))
+        print('epoch:{} reward:{}'.format(n, total_rewards[-1]))
         if n % 100 == 0:
-            ptl.plot(epoces, total_rewards)
-            ptl.savefig('episode{}.png'.format(n))
-            # print("episode:", n, "episode reward:", total_reward, "eps:", epsilon, "avg reward (last 100):", avg_rewards,
-            #       "episode loss: ", losses)
-    # print("avg reward for last 100 episodes:", avg_rewards)
-
+            plt.figure(figsize=(15,3))
+            # plt.plot(epoch, total_rewards)
+            plt.plot(epoch, avg_rewards)
+            plt.savefig('episode{}.png'.format(n))
 
 if __name__ == '__main__':
     main()
