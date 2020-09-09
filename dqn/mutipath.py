@@ -8,10 +8,6 @@ import pandas as pd
 import datetime
 import tensorflow as tf
 
-def draw():
-    data = np.loadtxt("downtrack.csv",delimiter=',')
-    print(data)
-
 def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
     rewards = 0
     iter = 0
@@ -24,7 +20,7 @@ def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
         prev_observations = observations
         observations, reward, done, play_id, downtrack = env.step(action)
         downtracks.append(downtrack)
-  
+        
         rewards += reward
         if done:
             reward = -200
@@ -82,13 +78,15 @@ def main():
         avg_rewards.append(avg_reward)
 
         print('epoch:{} reward:{}'.format(n, total_rewards[-1]))
-        if n % 100 == 0:
+        if n!=0 and n % 100 == 0:
             plt.figure(figsize=(15,3))
             plt.plot(epoch, total_rewards)
             plt.plot(epoch, avg_rewards)
-            plt.savefig('episode{}.png'.format(n))
-            np.savetxt('downtrack.csv', downtracks,delimiter=',')  
-
+            plt.savefig('figure/episode{}.png'.format(n))
+            f = 'downtrack/downtrack{}.csv'.format(n)
+            pd.DataFrame(downtracks).to_csv(f)
+        
 if __name__ == '__main__':
-    # main()
-    draw()
+    main()
+    # print("hello")
+    # draw()

@@ -4,6 +4,7 @@ import copy
 import math
 from .get_down_size import video_list_collector
 
+
 SAMPLE = 0.02  # sec
 # list of events
 DOWN = int(2)  # [cur_time, DOWN, down_id, cur_path]
@@ -186,7 +187,11 @@ class Env():
         cur_path = self.event[0][4]
         # print(round(cur_time, 1), ", DOWN", ", down_id = ", down_id, ", down_quality = ", down_quality, ", buffer_size = ",
         #       self.buffer_size, ", cur_path = ", cur_path)
-        downtrack = [round(cur_time, 1), down_id, down_quality, self.buffer_size, cur_path]
+        downtrack = {'time': round(cur_time, 1),
+                    'down_id': down_id,
+                    'quality': down_quality, 
+                    'buffer': self.buffer_size, 
+                    'path:': cur_path}
 
         self.down_segment[down_id] = down_quality
 
