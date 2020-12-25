@@ -1,4 +1,4 @@
-from simulator.m_training_env_v6 import Env
+from simulator.trainning_env import Env
 from statistics import mean
 from cart_pole import DQN
 import matplotlib.pyplot as plt
@@ -14,14 +14,12 @@ def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
     done = False
     observations = env.reset()
     losses = list()
-    downtracks = []
     while not done:
         action = TrainNet.get_action(observations, epsilon)
         prev_observations = observations
-        observations, reward, done, play_id, downtrack = env.step(action)
-        if downtrack is not None: 
-            downtracks.append(downtrack)
-        
+        # observations, reward, done, play_id, downtrack = env.step(action)
+        observations, reward, done, _, _ = env.step(action)
+
         rewards += reward
         if done:
             reward = -1000
@@ -42,21 +40,21 @@ def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
         if iter % copy_step == 0:
             TargetNet.copy_weights(TrainNet)
         
-    return rewards, mean(losses), downtracks
+    return rewards, mean(losses)
 
 
 
 def main():
     env = Env()
-    gamma = 0.99
-    copy_step = 25
-    num_states = 78
-    num_actions = 56
-    hidden_units = [200, 200]
+    gamma = 0.9
+    copy_step = 20
+    num_states = env.state_space()
+    num_actions = env.action_space()
+    hidden_units = [128, 256]
     max_experiences = 10000
     min_experiences = 100
-    batch_size = 32
-    lr = 1e-2
+    batch_size = 1000
+    lr = 1e-4
     current_time = datetime.datetime.now().strftime("%d%m%Y-%H%M%S")
     log_dir = 'logs/dqn/' + current_time
     summary_writer = tf.summary.create_file_writer(log_dir)
@@ -74,13 +72,13 @@ def main():
     for n in range(N):
         epoch.append(n)
         epsilon = max(min_epsilon, epsilon * decay)
-        total_reward, losses, downtracks = play_video(env, TrainNet, TargetNet, epsilon, copy_step)
+        total_reward, losses = play_video(env, TrainNet, TargetNet, epsilon, copy_step)
         total_rewards = np.append(total_rewards, [total_reward])
         avg_reward = total_rewards[max(0, n - 100):(n + 1)].mean()
         avg_rewards.append(avg_reward)
 
         print('epoch:{} reward:{}'.format(n, total_rewards[-1]))
-        if n!=0 and n % 1 == 0:
+        if n!=0 and n % 100 == 0:
             plt.figure(figsize=(15,3))
             plt.plot(epoch, total_rewards)
             plt.plot(epoch, avg_rewards)
@@ -88,12 +86,9 @@ def main():
             plt.clf()
             f = 'downtrack/downtrack{}.csv'.format(n)
             f2 = 'rewards/reward_meanReward{}'.format(n)
-            file_pretrain = 'pretrain_model/{}.h5'.format(current_time)
-            np.save(f2, [total_reward, avg_reward])
-            pd.DataFrame(downtracks).to_csv(f)
-            # TrainNet.save_model("1")
+            np.save(f2, [total_rewards, avg_rewards])
+            # pd.DataFrame(downtracks).to_csv(f)
 
         
 if __name__ == '__main__':
     main()
-    # draw()
