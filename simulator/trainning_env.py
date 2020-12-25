@@ -6,7 +6,7 @@ from .get_down_size import video_list_collector
 
 
 class Env():
-    BITRATE_TRACE = 'simulator/traces/bitrate_list'
+    BITRATE_TRACE = 'simulator/traces/markovian_bitrate'
     VIDEO_TRACE = 'simulator/video/video_list'
     A_DIM = 7
     HISTORY_SIZE = 7  
@@ -74,18 +74,6 @@ class Env():
                     - self.UTILITY_SCORE[self.last_action]) / self.M_IN_K
 
         return reward
-
-    def step(self,action):
-        last_state = self.state
-        raw_trace = self.video_player.download(action)
-        trace, terminate = self.process_trace(raw_trace)
-        
-        last_trace = self.state[0]
-        self.state = np.roll(self.state,1)
-        self.state[0] = trace 
-
-        reward = self.cal_reward(last_trace, trace)
-        return self.state.flatten(), reward, terminate, last_state.flatten()
 
     def step_new(self,action,format = 0):
         last_state = self.state
