@@ -6,8 +6,8 @@ from .get_down_size import video_list_collector
 
 
 class Env():
-    BITRATE_TRACE = 'simulator/bitrate_list'
-    VIDEO_TRACE = 'simulator/video_list'
+    BITRATE_TRACE = 'simulator/traces/bitrate_list'
+    VIDEO_TRACE = 'simulator/video/video_list'
     A_DIM = 7
     HISTORY_SIZE = 7  
     TRACE_SIZE = 8  # take how many frames in the past
