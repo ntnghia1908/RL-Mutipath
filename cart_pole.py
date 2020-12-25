@@ -9,7 +9,7 @@ from gym import wrappers
 class MyModel(tf.keras.Model):
     def __init__(self, num_states, hidden_units, num_actions):
         super(MyModel, self).__init__()
-        self.input_layer = tf.keras.layers.InputLayer(input_shape=(num_states,))
+        self.input_layer = tf.keras.layers.InputLayer(input_shape=(num_states))
         self.hidden_layers = []
         for i in hidden_units:
             self.hidden_layers.append(tf.keras.layers.Dense(
@@ -24,9 +24,6 @@ class MyModel(tf.keras.Model):
             z = layer(z)
         output = self.output_layer(z)
         return output
-
-    def save(path):
-        model.save(path)
 
 
 class DQN:
@@ -84,7 +81,7 @@ class DQN:
             v1.assign(v2.numpy())
     
     def save_model(self, path):
-        model.save(path)
+        tf.saved_model.save(self.model,path)
         
 
 

@@ -19,9 +19,6 @@ def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
         action = TrainNet.get_action(observations, epsilon)
         prev_observations = observations
         observations, reward, done, play_id, downtrack = env.step(action)
-        # print('downtrack', downtrack)
-        # print("observations: {}, reward: {}, done: {}, play_id: {}, downtrack: {}"
-                # .format(observations, reward, done, play_id, downtrack))
         if downtrack is not None: 
             downtracks.append(downtrack)
         
@@ -90,12 +87,13 @@ def main():
             plt.savefig('figure/episode{}.png'.format(n))
             plt.clf()
             f = 'downtrack/downtrack{}.csv'.format(n)
-            f2 = "rewards/reward_meanReward{}".format(n)
-            # print('downtracks', downtracks)
+            f2 = 'rewards/reward_meanReward{}'.format(n)
+            file_pretrain = 'pretrain_model/{}.h5'.format(current_time)
             np.save(f2, [total_reward, avg_reward])
             pd.DataFrame(downtracks).to_csv(f)
+            # TrainNet.save_model("1")
+
         
 if __name__ == '__main__':
     main()
-    # print("hello")
     # draw()
