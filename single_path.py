@@ -56,7 +56,7 @@ def main():
     max_experiences = 10000
     min_experiences = 100
     batch_size = 1000
-    lr = 1e-4
+    lr = 1e-2
     current_time = datetime.datetime.now().strftime("%d%m%Y-%H%M%S")
     log_dir = 'logs/dqn/' + current_time
     summary_writer = tf.summary.create_file_writer(log_dir)
@@ -85,17 +85,17 @@ def main():
         avg_rewards.append(avg_reward)
 
         print('epoch:{} reward:{}'.format(n, total_rewards[-1]))
-        if n!=0 and n % 100 == 0:
+        if n!=0 and n % 500 == 0:
             plt.figure(figsize=(15,3))
             plt.plot(epoch, total_rewards)
             plt.plot(epoch, avg_rewards)
-            plt.savefig('fig/fig_retrace.png')
+            plt.savefig('fig/fig_realtrace_lr1e2.png')
             plt.clf()
             # f = 'downtrack/downtrack{}.csv'.format(n)
-            f2 = 'rewards/reward_meanReward_real_trace'
+            f2 = 'rewards/reward_meanReward_realtrace_lr1e2'
             np.save(f2, [total_rewards, avg_rewards, epsilon])
-            if n % 2000 == 0:
-                TrainNet.save_model("model/DQNmodel_realtrace{}.h5".format(n))
+            if n % 5000 == 0:
+                TrainNet.save_model("model/DQNmodel_realtrace_lr1e2{}.h5".format(n))
             # pd.DataFrame(downtracks).to_csv(f)
 
         
