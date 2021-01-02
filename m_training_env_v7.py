@@ -2,14 +2,15 @@ import pickle
 import numpy as np
 import copy
 import math
-from .get_down_size import video_list_collector
+from get_down_size import video_list_collector
 
 SAMPLE = 0.02  # sec
+
 # list of events
-DOWN = int(2)  # [cur_time, DOWN, down_id, cur_path]
-DOWNF = int(1)  # [cur_time, DOWNF, down_id, cur_path]
-PLAY = int(4)  # [cur_time, PLAY, play_id, -1]
-PLAYF = int(3)  # [cur_time, PLAYF, play_id, -1]
+DOWN = int(1)  # [cur_time, DOWN, down_id, cur_path]
+DOWNF = int(2)  # [cur_time, DOWNF, down_id, cur_path]
+PLAY = int(3)  # [cur_time, PLAY, play_id, -1]
+PLAYF = int(4)  # [cur_time, PLAYF, play_id, -1]
 SLEEPF = int(5)  # [cur_time, PLAY, play_id, cur_path]
 FREEZEF = int(6)  # [cur_time, PLAY, next_play_id, cur_path]
 
@@ -17,9 +18,9 @@ PATH1 = int(1)
 PATH2 = int(2)
 
 # environment parameters
-BITRATE_TRACE1 = 'simulator/bitrate_list1'
-BITRATE_TRACE2 = 'simulator/bitrate_list2'
-VIDEO_TRACE = 'simulator/video_list_4s'
+BITRATE_TRACE1 = 'markovian_bitrate'
+BITRATE_TRACE2 = 'markovian_bitrate'
+VIDEO_TRACE = 'video_list'
 NETWORK_SEGMENT1 = 1  # sec
 NETWORK_SEGMENT2 = 1  # sec
 
@@ -30,7 +31,7 @@ REBUF_PENALTY = 4.3  # 1 sec rebuffering -> 3 Mbps
 SMOOTH_PENALTY = 1.0
 DEFAULT_QUALITY = 1  # default video quality without agent
 
-BUFFER_THRESH = 100.0  # sec, max buffer limit
+BUFFER_THRESH = 32.0  # sec, max buffer limit
 MIN_BUFFER_THRESH = 6.0  # sec, min buffer threshold
 M_IN_K = 1000.0
 
@@ -119,6 +120,12 @@ class Env():
 
         return self.state
 
+    def state_space(self):
+        return self.state.shape
+
+    def action_space(self):
+        return self.SEGMENT_SPACE * self.QUALITY_SPACE
+
     def down_time(self, segment_size, cur_time, path):
         # calculate net_seg_id, seg_time_stamp from cur_time. Remember seg_time_stamp plus rtt
         # set network segment ID to position after sleeping and download last segment
@@ -172,16 +179,8 @@ class Env():
             action / self.QUALITY_SPACE) + 1  # self.play_id is playing or just finish playing
         down_quality = action % self.QUALITY_SPACE
 
-        # if (down_id >= CHUNK_TIL_VIDEO_END_CAP):
-        #     return self.state, -50000, self.end_of_video, self.play_id, self.last_sum_reward
-
-        # if down_id is out of range or down_id is already downloaded then return a very high reward and state not change
-        # if (self.play_id == CHUNK_TIL_VIDEO_END_CAP - 1):
-        #     # self.end_of_video = True
-        #     return self.state, 0, True, CHUNK_TIL_VIDEO_END_CAP - 1, self.last_sum_reward
-        # el
         if (down_id > CHUNK_TIL_VIDEO_END_CAP - 1):
-            return self.state, -1000, self.end_of_video, self.play_id, self.last_sum_reward
+            return self.state, -100, self.end_of_video, self.play_id, self.last_sum_reward
 
         # if down_id has not downloaded yet, but buffer if full then dellete the higher id in buffer
         if ((self.down_segment_f[down_id] < -0.5) and (self.buffer_size > BUFFER_THRESH)):
@@ -228,7 +227,7 @@ class Env():
                     self.event = np.vstack((self.event, [[cur_time + SAMPLE, SLEEPF, -1, -1, cur_path]]))
                 else:
                     self.event = np.vstack((self.event, [[cur_time + 0.0001, DOWN, -1, -1, cur_path]]))
-                # self.event = np.delete(self.event, 0, 0)  # remove the current considering event from event
+
 
             if self.event[0][1] == SLEEPF:  # this make an infinite loop
                 # print(cur_time, " SLEEPF", ", buffer_size = ", self.buffer_size, ", cur_path = ", cur_path)
@@ -237,7 +236,7 @@ class Env():
                     self.event = np.vstack((self.event, [[cur_time + SAMPLE, SLEEPF, -1, -1, cur_path]]))
                 else:
                     self.event = np.vstack((self.event, [[cur_time + 0.0001, DOWN, -1, -1, cur_path]]))
-                # self.event = np.delete(self.event, 0, 0)  # remove the current considering event from event
+
 
             if self.event[0][1] == PLAY:
                 self.play_id = int(self.event[0][2])
@@ -318,11 +317,9 @@ class Env():
 
 
         if (last_down_segment[down_id] > -0.5 ):
-            reward = -1000
-            # return self.state, -5000, self.end_of_video, self.play_id
+            reward = -100
 
         if self.play_id == CHUNK_TIL_VIDEO_END_CAP - 1:  # if terminate reset
             self.end_of_video = True
-            # self.reset()
 
         return self.state, reward, self.end_of_video, self.play_id, sum_reward

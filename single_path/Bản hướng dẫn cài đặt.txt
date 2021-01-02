@@ -1,0 +1,21 @@
+Prerequisites
+- Python 3.7.4
+- Pip 20.0.2
+- Tensorflow 2.2.0
+- Matplotlib 3.1.1
+- Numpy 1.18.4
+- Pandas 1.0.3
+- Network data have to be downloaded and add to Network_data/{folder}/{network_data} before it can be used to
+seperate and train model
+Generate data trace
+- Before training the model data must be preprocess into pickle files by running
+`python3 generate_trace`
+Training
+- To train new model, make sure bitrate_list and video_list have been generated in prior step. Then run
+`python3 rl_gym`
+- The training process will takes around 1 hour to fully complete depend on machine
+- Model params after training is store under folder model/ as h5 files
+Evaluating
+- run `python3 plot` to generate overview of training process (on reward)
+- run `python3 evaluate` to generate an overall performance cdf
+- run `python3 evaluate_sep` to generate an overview of average performance bar chart of all method 
