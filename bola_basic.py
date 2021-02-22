@@ -4,11 +4,11 @@ class Bola:
     BUFFER_MAX = 30
     def __init__(self):
         self.qualities = np.array([46980,91917,135410,182366,270316,352546,620705]) 
-        self.gamma = 5
+        self.gamma = 5      # weight to prioritize playback utility vs. playback smoothness. v_N+γv_s
         self.time = 0
-        self.p = 1 # length of each segment
+        self.p = 1          # length of each segment (p seconds) self.gamma * self.p =5
         lw = self.qualities[-1]
-        self.v = np.log(self.qualities/lw)
+        self.v = np.log(self.qualities/lw)  # utilities
         self.data = {
                 "return_buffer": 0,
                 "next_seg": [] 
@@ -24,7 +24,7 @@ class Bola:
         t = self.time
         next_seg = np.flip(next_seg)
         t_p = max(t/2, 3)
-        Q = min(t_p,30)
+        Q = min(t_p,30)     # buffer size
         V = (Q-1)/(self.v[0]+self.gamma)
         m = np.argmax((V*self.v+V*5-self.data["return_buffer"])/next_seg)
         # if m < self.last:

@@ -1,13 +1,13 @@
 import numpy as np
 
 class SmoothThroughput:
-    HISTORY_STORY = 6
+    HISTORY = 3 # number of previous chunks used in estimation
     SAFE_THRESHOLD = 0.90
 
     def __init__(self):
 
         self.action_list = [46980,91917,135410,182366,270316,352546,620705]
-        self.history = np.zeros(self.HISTORY_STORY)
+        self.history = np.zeros(self.HISTORY)
 
     def predict(self, next_seg):
         predict =  np.mean(self.history)
