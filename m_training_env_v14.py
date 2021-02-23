@@ -18,8 +18,8 @@ PATH1 = int(1)
 PATH2 = int(2)
 
 # environment parameters
-BW_TRACE1 = 'markovian_bitrate'
-BW_TRACE2 = 'markovian_bitrate'
+BW_TRACE1 = 'bitrate_list_fix'
+BW_TRACE2 = 'bitrate_list_fix'
 
 # REALTRACE = True
 # if REALTRACE == True:
@@ -60,7 +60,7 @@ class Env():
     bw2 = np.asarray(bw) / 2.5
     print("Length of bitrate list ", len(bw2))
 
-    def __init__(self):
+    def __init__(self, test=False, seed=None):
         super().__init__()
         assert len(UTILITY_SCORE) == len(VIDEO_BIT_RATE)
         # get video list
@@ -68,13 +68,19 @@ class Env():
         vlc.save_dir = VIDEO_TRACE
         vlc.load()
         self.video_list = vlc.get_trace_matrix(VIDEO_BIT_RATE)
+        self.test = test
+        self.seed = seed
         self.reset()
 
     def reset(self):
+        if self.test == True:
+            np.random.seed(self.seed[0])
         self.init_net_seg1 = np.random.randint(0, len(self.bw1) - 1)
         # self.init_net_seg1 = 100
         self.net_seg_id1 = self.init_net_seg1
 
+        if self.test == True:
+            np.random.seed(self.seed[1])
         self.init_net_seg2 = np.random.randint(0, len(self.bw2) - 1)
         # self.init_net_seg2 = 150
         self.net_seg_id2 = self.init_net_seg2
@@ -191,7 +197,7 @@ class Env():
 
         if down_id > CHUNK_TIL_VIDEO_END_CAP - 1:
             down_path = self.event[0][4]
-            return self.state, -100, self.end_of_video,"near_end", self.play_id, self.last_sum_reward, down_path
+            return self.state, -100, self.end_of_video,"near_end", self.play_id, self.last_sum_reward, down_path, self.down_segment
 
         # if down_id has not downloaded yet, but buffer if full then delete the higher id in buffer
         if (self.down_segment_f[down_id] < -0.5) and (self.buffer_size > BUFFER_THRESH):

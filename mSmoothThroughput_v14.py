@@ -2,6 +2,7 @@ import numpy as np
 import mSmoothThroughput_v14 as smooth
 from m_training_env_v14 import Env
 import matplotlib.pyplot as plt
+import helper
 from get_down_size import video_list_collector
 
 M_IN_K = 1000.0
@@ -67,6 +68,7 @@ def evaluate(env):
             break
         cur_path = 1
         done = False
+        t
         while not done:
             # chunk_state = state[HISTORY_SIZE*2 + QUALITY_SPACE * SEGMENT_SPACE:HISTORY_SIZE*2 + QUALITY_SPACE * SEGMENT_SPACE+SEGMENT_SPACE]
             # down_id = get_downId(chunk_state)
@@ -83,7 +85,7 @@ def evaluate(env):
                 print(total_reward)
 
                 state = env.reset()
-                throughput_rewards = []
+                # throughput_rewards = []
                 total_reward = 0.0
                 down_segment = np.array([-1] * CHUNK_TIL_VIDEO_END_CAP)
 
@@ -92,6 +94,7 @@ def evaluate(env):
     # convert to cdf
     throughput_rewards = np.array(throughput_rewards)
     throughput_rewards = np.sort(throughput_rewards)
+    helper.np2csv('throughput_retrace_reward', throughput_rewards)
     y_axis = np.arange(1, len(throughput_rewards) + 1) / len(throughput_rewards)
     plt.plot(throughput_rewards, y_axis, label='throughput', color="red")
     plt.show()

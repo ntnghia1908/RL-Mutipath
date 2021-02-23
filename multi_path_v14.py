@@ -12,6 +12,7 @@ import datetime
 
 
 reward_trace = [['reward_quality', 'smooth_penalty', 'rebuf_penalty', 'sum_reward']]
+
 def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
     total_reward = 0
     iter = 0
@@ -24,7 +25,7 @@ def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
         prev_observations = observations
 
 
-        observations, reward, done, line, _ , _ , _  = env.step(action)
+        observations, reward, done, line, _ , _ , _, _  = env.step(action)
 
         history += line
         total_reward += reward
@@ -66,14 +67,14 @@ def main():
     batch_size = 200
     lr = 1e-4*0.5
 
-    N = 2000
+    N = 1000
     total_rewards = np.array([])
     epsilon = 0.99
-    decay = 0.999
+    decay = 0.9
     min_epsilon = 0.1
     epoch = []
     avg_rewards = []
-    file_name = 'lr45_decay999_batch200_v14'
+    file_name = 'lr45_decay9_batch200_fixtrace_v14'
     current_time = datetime.datetime.now().strftime("%d%m%Y-%H%M%S")
     state = env.reset()
 
@@ -88,7 +89,7 @@ def main():
         TrainNet.load_model(np.array([state], dtype='float32'), 'model/DQNmodel_lr45_decay999_batch200_v14.h5')
         TargetNet.load_model(np.array([state], dtype='float32'), 'model/DQNmodel_lr45_decay999_batch200_v14.h5')
 
-    TEST = True
+    TEST = False
     if TEST == True:
         epsilon = 0.0
         decay = 1.0
@@ -123,7 +124,7 @@ def main():
         #     TrainNet.save_model("model/DQNmodel_{}.h5".format(file_name))
 
         print('epoch:{} reward:{}'.format(n, total_rewards[-1]))
-        if n != 0 and n%10 == 0:
+        if n != 0 and n % 50 == 0:
             plt.figure(figsize=(15,3))
             plt.plot(epoch, total_rewards)
             plt.plot(epoch, avg_rewards)
@@ -132,8 +133,9 @@ def main():
             # f = 'downtrack/downtrack{}.csv'.format(n)
             f2 = 'rewards/history_{}'.format(file_name)
             np.save(f2, [total_rewards, avg_rewards, epsilon])
-            if n % 10 == 0:
+            if n % 50 == 0:
                 TrainNet.save_model("model/DQNmodel_{}.h5".format(file_name))
+
 
 if __name__ == '__main__':
     main()
