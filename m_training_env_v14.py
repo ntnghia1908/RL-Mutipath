@@ -18,8 +18,8 @@ PATH1 = int(1)
 PATH2 = int(2)
 
 # environment parameters
-BW_TRACE1 = 'bitrate_list_fix'
-BW_TRACE2 = 'bitrate_list_fix'
+BW_TRACE1 = 'bitrate_list'
+BW_TRACE2 = 'bitrate_list'
 
 # REALTRACE = True
 # if REALTRACE == True:

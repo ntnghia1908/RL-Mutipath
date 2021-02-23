@@ -65,16 +65,16 @@ def main():
     max_experiences = 10000
     min_experiences = 100
     batch_size = 200
-    lr = 1e-4*0.5
+    lr = 1e-4
 
-    N = 1000
+    N = 2000
     total_rewards = np.array([])
     epsilon = 0.99
-    decay = 0.9
+    decay = 0.995
     min_epsilon = 0.1
     epoch = []
     avg_rewards = []
-    file_name = 'lr45_decay9_batch200_fixtrace_v14'
+    file_name = 'lr4_decay995_batch200_readtrace_v14'
     current_time = datetime.datetime.now().strftime("%d%m%Y-%H%M%S")
     state = env.reset()
 
