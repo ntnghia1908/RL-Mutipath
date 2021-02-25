@@ -70,6 +70,8 @@ class Env():
         vlc.save_dir = VIDEO_TRACE
         vlc.load()
         self.video_list = vlc.get_trace_matrix(VIDEO_BIT_RATE)
+        self.bw1_trace = []
+        self.bw2_trace = []
         self.reset()
 
     def reset(self):
@@ -130,6 +132,14 @@ class Env():
 
         self.play_event = [['time', 'playID', 'playQuality', 'buffer_size']]
         self.down_event = [['time', 'down_id', 'path', 'thoughput', 'reward_quality', 'smooth_penalty', 'rebuf_penalty', 'sum_reward']]
+        self.buffer_size_trace = [['time', 'buffer']]
+        self.est_throughput = [['time', 'thoughtput']]
+        self.bw1_trace = [['time', 'bw1']]
+        self.bw2_trace = [['time', 'bw2']]
+        self.var1 = 0.0
+        self.var2 = 0.0
+        self.var3 = 0.0
+
         return self.state
 
     def state_space(self):
@@ -150,6 +160,7 @@ class Env():
             while True:  # download segment process finish after a full video segment is downloaded
                 self.net_seg_id1 = self.net_seg_id1 % len(self.bw1)  # loop back to begin if finished
                 network = self.bw1[self.net_seg_id1]  # network DL_bitrate in bps
+                self.bw1_trace.append([cur_time, network])
                 # maximum possible throughput in bytes
                 max_throughput = network * (NETWORK_SEGMENT1 - seg_time_stamp)
 
@@ -172,6 +183,7 @@ class Env():
             while True:
                 self.net_seg_id2 = self.net_seg_id2 % len(self.bw2)  # loop back to begin if finished
                 network = self.bw2[self.net_seg_id2]  # network DL_bitrate in bps
+                self.bw2_trace.append([cur_time, network])
                 max_throughput = network * (NETWORK_SEGMENT2 - seg_time_stamp)  # maximum possible throughput in bytes
 
                 if max_throughput > segment_size:  # finish download in network segment
@@ -209,6 +221,7 @@ class Env():
         line = "{}, DOWN, down_id= {}, quality= {}, buffer_size= {}, down_path= {}\n".format(round(cur_down_time,2), down_id, down_quality, self.buffer_size, cur_down_path)
         self.down_segment[down_id] = down_quality
         self.buffer_size = sum((self.down_segment[self.play_id:] > -0.5)) * VIDEO_CHUNK_LEN
+        self.buffer_size_trace.append([cur_down_time, self.buffer_size])
 
         segment_size = float(self.video_list[down_quality][down_id]) * 8.0  # download video segment in bits
         delay = self.down_time(segment_size, cur_down_time, cur_down_path)
@@ -255,7 +268,7 @@ class Env():
                 self.play_id = int(self.event[0][2])
                 self.buffer_size = sum((self.down_segment_f[(self.play_id+1):]>-0.5))*VIDEO_CHUNK_LEN
                 line += "{}, PLAY={}, buffer_size= {}\n".format(round(cur_time,2), self.play_id, self.buffer_size)
-                
+
                 # self.buffer_size -= VIDEO_CHUNK_LEN
                 play_quality = self.down_segment_f[self.play_id]
                 last_play_quality = self.down_segment_f[self.play_id - 1]
@@ -287,15 +300,17 @@ class Env():
                 else:
                     self.event = np.vstack((self.event, [[cur_time + 0.0001, PLAY, self.event[0][2], self.down_segment_f[int(self.event[0][3])] , -1]]))
 
+            self.buffer_size_trace.append([cur_time, self.buffer_size])
             self.event = np.delete(self.event, 0, 0)  # remove the current considering event from event
             self.event = self.event[self.event[:, 0].argsort()]
 
 
-        var1 = self.reward_qua / M_IN_K
-        var2 = SMOOTH_PENALTY * self.reward_smooth / M_IN_K
-        var3 = self.reward_rebuf * REBUF_PENALTY / M_IN_K
-        sum_reward = var1 - var2 - var3
-        self.down_event.append([round(cur_down_time,1), down_id, cur_down_path, round(cur_throughput), var1, var2, round(var3), round(sum_reward)])
+        self.var1 = self.reward_qua / M_IN_K
+        self.var2 = SMOOTH_PENALTY * self.reward_smooth / M_IN_K
+        self.var3 = self.reward_rebuf * REBUF_PENALTY / M_IN_K
+        sum_reward = self.var1 - self.var2 - self.var3
+
+        self.down_event.append([round(cur_down_time,1), down_id, cur_down_path, round(cur_throughput), self.var1, self.var2, round(self.var3), round(sum_reward)])
         # print("var1=", var1, ", var2=", var2, ", var3=", var3, ", sum_reward=", sum_reward)
         # sum_reward = self.reward_qua / M_IN_K - SMOOTH_PENALTY * \
         #             self.reward_smooth / M_IN_K - self.reward_rebuf * REBUF_PENALTY
@@ -335,15 +350,14 @@ class Env():
         self.state = np.append(self.state, remain/CHUNK_TIL_VIDEO_END_CAP)  # remain video chunks
         self.state = np.append(self.state, self.down_segment[self.play_id] * 0.1)  # last quality
 
-        if (last_down_segment[down_id] > -0.5 ):
-            line += '**'
+        # if (last_down_segment[down_id] > -0.5 ):
+            # line += '**'
 
             # sum_reward  -= 10
             # reward = sum_reward - self.last_sum_reward
             # self.last_sum_reward = sum_reward
 
         if self.play_id == CHUNK_TIL_VIDEO_END_CAP - 1:  # if terminate reset
-            self.reward_trace= [var1, var2, round(var3), round(sum_reward)]
             self.end_of_video = True
 
         # return self.state, reward, self.end_of_video, line, self.play_id, sum_reward, cur_down_path # for reinforcement learning model

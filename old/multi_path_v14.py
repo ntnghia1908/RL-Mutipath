@@ -111,24 +111,6 @@ def main():
         avg_reward = total_rewards[max(0, n - 100):(n + 1)].mean()
         avg_rewards.append(avg_reward)
 
-
-
-        # print('epoch:{} reward:{}'.format(n, total_rewards[-1]))
-        # if n != 0 and n % 10 == 0:
-        #     plt.figure(figsize=(15,3))
-        #     np2csv('total_rewards', total_rewards)
-        #     write2csv('reward_trace', reward_trace)
-        #     plt.plot(epoch, total_rewards)
-        #     plt.plot(epoch, avg_rewards)
-        #     plt.savefig('fig/{}.png'.format(file_name))
-        #     plt.clf()
-        #     # f = 'downtrack/downtrack{}.csv'.format(n)
-        #     f2 = 'rewards/history_{}'.format(file_name)
-        #     np.save(f2, [total_rewards, avg_rewards, epsilon])
-        #     # if n % 10 == 0:
-        #     TrainNet.save_model("model/DQNmodel_{}.h5".format(file_name))
-
-        # print('epoch:{} reward:{}'.format(n, total_rewards[-1]))
         print(round(total_rewards[-1], 1))
         if n != 0 and n % 50 == 0:
             plt.figure(figsize=(15,3))

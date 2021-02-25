@@ -1,7 +1,6 @@
 import numpy as np
-import mSmoothThroughput_v15 as smooth
 from helper import write2csv
-from old.m_training_env_v14 import Env
+from m_training_env_v15_test import Env
 import matplotlib.pyplot as plt
 import helper
 from get_down_size import video_list_collector
@@ -56,54 +55,69 @@ def predict(env, state, down_id, cur_path, prev_segment=3):
 
 
 def evaluate(env):
-    EVAL_EPS = 100
+    EVAL_EPS = 150
     state = env.reset()
     throughput_rewards = []
     total_reward = 0.0
     down_segment = np.array([-1] * CHUNK_TIL_VIDEO_END_CAP)
     play_id = 0
 
-    ep = 0
+    ep = 1
+    reward_trace = [['reward_quality', 'smooth_penalty', 'rebuf_penalty', 'sum_reward']]
     while True:
         if ep > EVAL_EPS:
             break
         cur_path = 1
         done = False
+
         while not done:
             # chunk_state = state[HISTORY_SIZE*2 + QUALITY_SPACE * SEGMENT_SPACE:HISTORY_SIZE*2 + QUALITY_SPACE * SEGMENT_SPACE+SEGMENT_SPACE]
             # down_id = get_downId(chunk_state)
             down_id = get_downId(down_segment)
-            quality = smooth.predict(env, state, down_id, cur_path)
+            quality = predict(env, state, down_id, cur_path)
             action = (down_id - play_id -1) * QUALITY_SPACE + quality
             # print("play_id, down_id, quality, cur_path", play_id, down_id, quality, cur_path)
 
             state, reward, done, sep_reward, play_id, _, cur_path, down_segment = env.step(action)
             total_reward += reward
+
             if done:
                 ep += 1
                 throughput_rewards.append(total_reward)
-                print(total_reward)
-                write2csv('smooth_evaluate/play_event{}'.format(round(total_reward, 1)), env.play_event)
-                write2csv('smooth_evaluate/down_event{}'.format(round(total_reward, 1)), env.down_event)
+
+                write2csv('evaluateSmooth/{}play_event'.format(round(total_reward, 1)), env.play_event)
+                write2csv('evaluateSmooth/{}down_event'.format(round(total_reward, 1)), env.down_event)
+                write2csv('evaluateSmooth/{}buffer_traces'.format(round(total_reward, 1)), env.buffer_size_trace)
+                write2csv('evaluateSmooth/{}bw1'.format(round(total_reward, 1)), env.bw1_trace)
+                write2csv('evaluateSmooth/{}bw2'.format(round(total_reward, 1)), env.bw2_trace)
+
+                quality_reward = env.var1
+                smooth_reward = env.var2
+                buffering_reward = env.var3
+
+                reward_trace.append([quality_reward, smooth_reward, buffering_reward, total_reward])
+                print(ep, quality_reward, smooth_reward, buffering_reward, total_reward)
 
                 state = env.reset()
                 # throughput_rewards = []
                 total_reward = 0.0
                 down_segment = np.array([-1] * CHUNK_TIL_VIDEO_END_CAP)
-
                 play_id = 0
 
-    # convert to cdf
-    throughput_rewards = np.array(throughput_rewards)
-    throughput_rewards = np.sort(throughput_rewards)
-    helper.np2csv('throughput_retrace_reward', throughput_rewards)
-    y_axis = np.arange(1, len(throughput_rewards) + 1) / len(throughput_rewards)
-    plt.plot(throughput_rewards, y_axis, label='throughput', color="red")
-    plt.show()
+        write2csv('evaluateSmooth/reward_trace', reward_trace)
+
+
+    # # convert to cdf
+    # throughput_rewards = np.array(throughput_rewards)
+    # throughput_rewards = np.sort(throughput_rewards)
+    # helper.np2csv('throughput_retrace_reward', throughput_rewards)
+    # y_axis = np.arange(1, len(throughput_rewards) + 1) / len(throughput_rewards)
+    # plt.plot(throughput_rewards, y_axis, label='throughput', color="red")
+    # plt.show()
 
 
 if __name__ == '__main__':
-    print("seek", 6)
-    np.random.seed(6)
+    print("seek", 18)
+    np.random.seed(18)
     env = Env()
     evaluate(env)
