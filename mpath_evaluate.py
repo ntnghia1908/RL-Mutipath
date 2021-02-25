@@ -70,7 +70,7 @@ plt.plot(agent_rewards,y_axis,label = 'policy gradient',color="blue")
 # y_axis = np.arange(1,len(agent_rewards)+1) / len(agent_rewards)
 # plt.plot(agent_rewards,y_axis,label = 'actor critic',color="purple")
 
-# evaluation for smooth throughput
+# evaluation for smooth_evaluate throughput
 state = net_env.reset()
 ep = 0
 throughput_rewards = []
@@ -80,7 +80,7 @@ while True:
     if ep == EVAL_EPS:
         break
 
-    # calculate the action using smooth throughput
+    # calculate the action using smooth_evaluate throughput
     if cur_path == 1:
         est_thoughput = net_env.state[0:HISTORY-1]# estimated throughput from state of previous step
     else:

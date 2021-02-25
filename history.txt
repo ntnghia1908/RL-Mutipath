@@ -1,761 +1,644 @@
-0.05, DOWN, down_id= 8, quality= 1, buffer_size= 0, down_path= 2.0
-2.06, DOWNF, down_id= 8, buffer_size= 8, cur_path= 1
-2.06, PLAY=0, buffer_size= 0
-2.06, DOWN, down_id= 1, quality= 0, buffer_size= 0, down_path= 1.0
-2.45, DOWNF, down_id= 1, buffer_size= 12, cur_path= 2
-2.45, DOWN, down_id= 1, quality= 3, buffer_size= 12, down_path= 2.0
-3.11, DOWNF, down_id= 1, buffer_size= 12, cur_path= 1
-**3.11, DOWN, down_id= 1, quality= 3, buffer_size= 12, down_path= 1.0
-6.06, PLAYF=0.0, buffer_size= 12
-6.06, PLAY=1, buffer_size= 4
-6.57, DOWNF, down_id= 1, buffer_size= 4, cur_path= 1
-**6.57, DOWN, down_id= 2, quality= 0, buffer_size= 4, down_path= 1.0
-7.12, DOWNF, down_id= 2, buffer_size= 12, cur_path= 1
-7.12, DOWN, down_id= 2, quality= 3, buffer_size= 12, down_path= 1.0
-10.06, PLAYF=1.0, buffer_size= 12
-10.06, PLAY=2, buffer_size= 4
-10.12, DOWNF, down_id= 2, buffer_size= 4, cur_path= 1
-**10.12, DOWN, down_id= 3, quality= 0, buffer_size= 4, down_path= 1.0
-10.62, DOWNF, down_id= 3, buffer_size= 12, cur_path= 1
-10.62, DOWN, down_id= 3, quality= 3, buffer_size= 12, down_path= 1.0
-13.5, DOWNF, down_id= 3, buffer_size= 12, cur_path= 1
-**13.5, DOWN, down_id= 3, quality= 3, buffer_size= 12, down_path= 1.0
-13.73, DOWNF, down_id= 3, buffer_size= 12, cur_path= 2
-**13.73, DOWN, down_id= 3, quality= 3, buffer_size= 12, down_path= 2.0
-14.06, PLAYF=2.0, buffer_size= 12
-14.06, PLAY=3, buffer_size= 4
-16.35, DOWNF, down_id= 3, buffer_size= 4, cur_path= 1
-**16.35, DOWN, down_id= 4, quality= 0, buffer_size= 4, down_path= 1.0
-16.74, DOWNF, down_id= 4, buffer_size= 12, cur_path= 1
-16.74, DOWN, down_id= 4, quality= 3, buffer_size= 12, down_path= 1.0
-18.06, PLAYF=3.0, buffer_size= 12
-18.06, PLAY=4, buffer_size= 4
-18.33, DOWNF, down_id= 4, buffer_size= 4, cur_path= 1
-**18.33, DOWN, down_id= 5, quality= 0, buffer_size= 4, down_path= 1.0
-18.81, DOWNF, down_id= 5, buffer_size= 12, cur_path= 1
-18.81, DOWN, down_id= 11, quality= 4, buffer_size= 12, down_path= 1.0
-18.91, DOWNF, down_id= 11, buffer_size= 16, cur_path= 2
-18.91, DOWN, down_id= 11, quality= 4, buffer_size= 16, down_path= 2.0
-22.06, PLAYF=4.0, buffer_size= 16
-22.06, PLAY=5, buffer_size= 4
-23.3, DOWNF, down_id= 11, buffer_size= 4, cur_path= 1
-**23.3, DOWN, down_id= 6, quality= 0, buffer_size= 4, down_path= 1.0
-23.72, DOWNF, down_id= 6, buffer_size= 16, cur_path= 1
-23.72, DOWN, down_id= 12, quality= 4, buffer_size= 16, down_path= 1.0
-26.06, PLAYF=5.0, buffer_size= 20
-26.06, PLAY=6, buffer_size= 8
-30.06, PLAYF=6.0, buffer_size= 8
-30.11, FREEZEF, buffer_size= 8
-30.16, FREEZEF, buffer_size= 8
-30.21, FREEZEF, buffer_size= 8
-30.23, DOWNF, down_id= 12, buffer_size= 8, cur_path= 2
-30.23, DOWN, down_id= 7, quality= 0, buffer_size= 8, down_path= 2.0
-30.26, FREEZEF, buffer_size= 20
-30.31, FREEZEF, buffer_size= 20
-30.36, FREEZEF, buffer_size= 20
-30.41, FREEZEF, buffer_size= 20
-30.46, FREEZEF, buffer_size= 20
-30.51, FREEZEF, buffer_size= 20
-30.56, FREEZEF, buffer_size= 20
-30.61, FREEZEF, buffer_size= 20
-30.66, FREEZEF, buffer_size= 20
-30.71, FREEZEF, buffer_size= 20
-30.76, FREEZEF, buffer_size= 20
-30.81, FREEZEF, buffer_size= 20
-30.86, FREEZEF, buffer_size= 20
-30.91, FREEZEF, buffer_size= 20
-30.96, FREEZEF, buffer_size= 20
-31.01, FREEZEF, buffer_size= 20
-31.06, FREEZEF, buffer_size= 20
-31.06, DOWNF, down_id= 7, buffer_size= 20, cur_path= 1
-31.06, DOWN, down_id= 7, quality= 3, buffer_size= 20, down_path= 1.0
-31.11, FREEZEF, buffer_size= 20
-31.16, FREEZEF, buffer_size= 20
-31.21, FREEZEF, buffer_size= 20
-31.26, FREEZEF, buffer_size= 20
-31.31, FREEZEF, buffer_size= 20
-31.36, FREEZEF, buffer_size= 20
-31.41, FREEZEF, buffer_size= 20
-31.46, FREEZEF, buffer_size= 20
-31.51, FREEZEF, buffer_size= 20
-31.56, FREEZEF, buffer_size= 20
-31.61, FREEZEF, buffer_size= 20
-31.66, FREEZEF, buffer_size= 20
-31.71, FREEZEF, buffer_size= 20
-31.76, FREEZEF, buffer_size= 20
-31.81, FREEZEF, buffer_size= 20
-31.86, FREEZEF, buffer_size= 20
-31.91, FREEZEF, buffer_size= 20
-31.96, FREEZEF, buffer_size= 20
-32.01, FREEZEF, buffer_size= 20
-32.06, FREEZEF, buffer_size= 20
-32.11, FREEZEF, buffer_size= 20
-32.16, FREEZEF, buffer_size= 20
-32.21, FREEZEF, buffer_size= 20
-32.26, FREEZEF, buffer_size= 20
-32.31, FREEZEF, buffer_size= 20
-32.36, FREEZEF, buffer_size= 20
-32.41, FREEZEF, buffer_size= 20
-32.46, FREEZEF, buffer_size= 20
-32.51, FREEZEF, buffer_size= 20
-32.56, FREEZEF, buffer_size= 20
-32.61, FREEZEF, buffer_size= 20
-32.66, FREEZEF, buffer_size= 20
-32.71, FREEZEF, buffer_size= 20
-32.76, FREEZEF, buffer_size= 20
-32.81, FREEZEF, buffer_size= 20
-32.86, FREEZEF, buffer_size= 20
-32.91, FREEZEF, buffer_size= 20
-32.96, FREEZEF, buffer_size= 20
-33.01, FREEZEF, buffer_size= 20
-33.06, FREEZEF, buffer_size= 20
-33.11, FREEZEF, buffer_size= 20
-33.16, FREEZEF, buffer_size= 20
-33.21, FREEZEF, buffer_size= 20
-33.26, FREEZEF, buffer_size= 20
-33.31, FREEZEF, buffer_size= 20
-33.36, FREEZEF, buffer_size= 20
-33.41, FREEZEF, buffer_size= 20
-33.46, FREEZEF, buffer_size= 20
-33.51, FREEZEF, buffer_size= 20
-33.56, FREEZEF, buffer_size= 20
-33.61, FREEZEF, buffer_size= 20
-33.66, FREEZEF, buffer_size= 20
-33.71, FREEZEF, buffer_size= 20
-33.76, FREEZEF, buffer_size= 20
-33.81, FREEZEF, buffer_size= 20
-33.86, FREEZEF, buffer_size= 20
-33.91, FREEZEF, buffer_size= 20
-33.96, FREEZEF, buffer_size= 20
-34.01, FREEZEF, buffer_size= 20
-34.06, FREEZEF, buffer_size= 20
-34.11, FREEZEF, buffer_size= 20
-34.16, FREEZEF, buffer_size= 20
-34.21, FREEZEF, buffer_size= 20
-34.26, FREEZEF, buffer_size= 20
-34.31, FREEZEF, buffer_size= 20
-34.36, DOWNF, down_id= 7, buffer_size= 20, cur_path= 1
-**34.36, DOWN, down_id= 7, quality= 3, buffer_size= 20, down_path= 1.0
-34.36, FREEZEF, buffer_size= 20
-34.36, PLAY=7, buffer_size= 12
-34.36, DOWNF, down_id= 7, buffer_size= 12, cur_path= 2
-**34.36, DOWN, down_id= 8, quality= 3, buffer_size= 12, down_path= 2.0
-37.7, DOWNF, down_id= 8, buffer_size= 16, cur_path= 1
-**37.7, DOWN, down_id= 8, quality= 3, buffer_size= 16, down_path= 1.0
-38.36, PLAYF=7.0, buffer_size= 16
-38.36, PLAY=8, buffer_size= 8
-40.7, DOWNF, down_id= 8, buffer_size= 8, cur_path= 1
-**40.7, DOWN, down_id= 9, quality= 0, buffer_size= 8, down_path= 1.0
-41.88, DOWNF, down_id= 9, buffer_size= 16, cur_path= 1
-41.88, DOWN, down_id= 9, quality= 3, buffer_size= 16, down_path= 1.0
-42.36, PLAYF=8.0, buffer_size= 16
-42.36, PLAY=9, buffer_size= 8
-43.85, DOWNF, down_id= 9, buffer_size= 8, cur_path= 2
-**43.85, DOWN, down_id= 10, quality= 0, buffer_size= 8, down_path= 2.0
-44.91, DOWNF, down_id= 10, buffer_size= 16, cur_path= 1
-44.91, DOWN, down_id= 17, quality= 6, buffer_size= 16, down_path= 1.0
-44.99, DOWNF, down_id= 17, buffer_size= 20, cur_path= 2
-44.99, DOWN, down_id= 17, quality= 6, buffer_size= 20, down_path= 2.0
-46.36, PLAYF=9.0, buffer_size= 20
-46.36, PLAY=10, buffer_size= 8
-49.53, DOWNF, down_id= 17, buffer_size= 8, cur_path= 1
-**49.53, DOWN, down_id= 15, quality= 3, buffer_size= 8, down_path= 1.0
-50.36, PLAYF=10.0, buffer_size= 20
-50.36, PLAY=11, buffer_size= 8
-52.22, DOWNF, down_id= 15, buffer_size= 8, cur_path= 1
-52.22, DOWN, down_id= 12, quality= 3, buffer_size= 8, down_path= 1.0
-53.16, DOWNF, down_id= 12, buffer_size= 16, cur_path= 2
-**53.16, DOWN, down_id= 12, quality= 3, buffer_size= 16, down_path= 2.0
-54.36, PLAYF=11.0, buffer_size= 16
-54.36, PLAY=12, buffer_size= 8
-55.53, DOWNF, down_id= 12, buffer_size= 8, cur_path= 1
-**55.53, DOWN, down_id= 13, quality= 0, buffer_size= 8, down_path= 1.0
-56.12, DOWNF, down_id= 13, buffer_size= 16, cur_path= 1
-56.12, DOWN, down_id= 13, quality= 3, buffer_size= 16, down_path= 1.0
-57.57, DOWNF, down_id= 13, buffer_size= 16, cur_path= 2
-**57.57, DOWN, down_id= 19, quality= 4, buffer_size= 16, down_path= 2.0
-58.36, PLAYF=12.0, buffer_size= 20
-58.36, PLAY=13, buffer_size= 8
-58.93, DOWNF, down_id= 19, buffer_size= 8, cur_path= 1
-58.93, DOWN, down_id= 14, quality= 0, buffer_size= 8, down_path= 1.0
-59.28, DOWNF, down_id= 14, buffer_size= 20, cur_path= 1
-59.28, DOWN, down_id= 20, quality= 4, buffer_size= 20, down_path= 1.0
-62.36, PLAYF=13.0, buffer_size= 24
-62.36, PLAY=14, buffer_size= 8
-64.87, DOWNF, down_id= 20, buffer_size= 8, cur_path= 1
-64.87, DOWN, down_id= 15, quality= 0, buffer_size= 8, down_path= 1.0
-65.36, DOWNF, down_id= 15, buffer_size= 20, cur_path= 1
-**65.36, DOWN, down_id= 21, quality= 6, buffer_size= 20, down_path= 1.0
-66.36, PLAYF=14.0, buffer_size= 24
-66.36, PLAY=15, buffer_size= 8
-67.7, DOWNF, down_id= 21, buffer_size= 8, cur_path= 2
-67.7, DOWN, down_id= 23, quality= 1, buffer_size= 8, down_path= 2.0
-67.95, DOWNF, down_id= 23, buffer_size= 24, cur_path= 1
-67.95, DOWN, down_id= 16, quality= 0, buffer_size= 24, down_path= 1.0
-68.37, DOWNF, down_id= 16, buffer_size= 28, cur_path= 1
-68.37, DOWN, down_id= 20, quality= 3, buffer_size= 28, down_path= 1.0
-69.27, DOWNF, down_id= 20, buffer_size= 28, cur_path= 2
-**69.27, DOWN, down_id= 20, quality= 3, buffer_size= 28, down_path= 2.0
-70.36, PLAYF=15.0, buffer_size= 28
-70.36, PLAY=16, buffer_size= 20
-70.4, DOWNF, down_id= 20, buffer_size= 20, cur_path= 1
-**70.4, DOWN, down_id= 20, quality= 0, buffer_size= 20, down_path= 1.0
-70.92, DOWNF, down_id= 20, buffer_size= 24, cur_path= 1
-**70.92, DOWN, down_id= 17, quality= 0, buffer_size= 24, down_path= 1.0
-71.39, DOWNF, down_id= 17, buffer_size= 24, cur_path= 1
-**71.39, DOWN, down_id= 20, quality= 0, buffer_size= 24, down_path= 1.0
-72.02, DOWNF, down_id= 20, buffer_size= 24, cur_path= 1
-**72.02, DOWN, down_id= 20, quality= 0, buffer_size= 24, down_path= 1.0
-72.52, DOWNF, down_id= 20, buffer_size= 24, cur_path= 1
-**72.52, DOWN, down_id= 21, quality= 3, buffer_size= 24, down_path= 1.0
-73.77, DOWNF, down_id= 21, buffer_size= 24, cur_path= 1
-**73.77, DOWN, down_id= 20, quality= 0, buffer_size= 24, down_path= 1.0
-74.12, DOWNF, down_id= 20, buffer_size= 24, cur_path= 2
-**74.12, DOWN, down_id= 20, quality= 0, buffer_size= 24, down_path= 2.0
-74.36, PLAYF=16.0, buffer_size= 24
-74.36, PLAY=17, buffer_size= 16
-74.39, DOWNF, down_id= 20, buffer_size= 16, cur_path= 1
-**74.39, DOWN, down_id= 18, quality= 0, buffer_size= 16, down_path= 1.0
-74.92, DOWNF, down_id= 18, buffer_size= 24, cur_path= 1
-74.92, DOWN, down_id= 20, quality= 2, buffer_size= 24, down_path= 1.0
-75.54, DOWNF, down_id= 20, buffer_size= 24, cur_path= 2
-**75.54, DOWN, down_id= 22, quality= 6, buffer_size= 24, down_path= 2.0
-77.49, DOWNF, down_id= 22, buffer_size= 28, cur_path= 1
-77.49, DOWN, down_id= 22, quality= 3, buffer_size= 28, down_path= 1.0
-78.36, PLAYF=17.0, buffer_size= 28
-78.36, PLAY=18, buffer_size= 16
-79.23, DOWNF, down_id= 22, buffer_size= 16, cur_path= 1
-**79.23, DOWN, down_id= 23, quality= 3, buffer_size= 16, down_path= 1.0
-80.58, DOWNF, down_id= 23, buffer_size= 24, cur_path= 1
-**80.58, DOWN, down_id= 23, quality= 3, buffer_size= 24, down_path= 1.0
-82.17, DOWNF, down_id= 23, buffer_size= 24, cur_path= 1
-**82.17, DOWN, down_id= 23, quality= 3, buffer_size= 24, down_path= 1.0
-82.36, PLAYF=18.0, buffer_size= 24
-82.36, PLAY=19, buffer_size= 16
-83.71, DOWNF, down_id= 23, buffer_size= 16, cur_path= 2
-**83.71, DOWN, down_id= 24, quality= 3, buffer_size= 16, down_path= 2.0
-83.77, DOWNF, down_id= 24, buffer_size= 24, cur_path= 1
-83.77, DOWN, down_id= 24, quality= 3, buffer_size= 24, down_path= 1.0
-85.77, DOWNF, down_id= 24, buffer_size= 24, cur_path= 1
-**85.77, DOWN, down_id= 24, quality= 3, buffer_size= 24, down_path= 1.0
-85.83, DOWNF, down_id= 24, buffer_size= 24, cur_path= 2
-**85.83, DOWN, down_id= 24, quality= 3, buffer_size= 24, down_path= 2.0
-86.36, PLAYF=19.0, buffer_size= 24
-86.36, PLAY=20, buffer_size= 16
-88.28, DOWNF, down_id= 24, buffer_size= 16, cur_path= 1
-**88.28, DOWN, down_id= 23, quality= 4, buffer_size= 16, down_path= 1.0
-88.64, DOWNF, down_id= 23, buffer_size= 20, cur_path= 2
-**88.64, DOWN, down_id= 23, quality= 4, buffer_size= 20, down_path= 2.0
-90.36, PLAYF=20.0, buffer_size= 20
-90.36, PLAY=21, buffer_size= 12
-90.98, DOWNF, down_id= 23, buffer_size= 12, cur_path= 1
-**90.98, DOWN, down_id= 24, quality= 4, buffer_size= 12, down_path= 1.0
-93.08, DOWNF, down_id= 24, buffer_size= 16, cur_path= 2
-**93.08, DOWN, down_id= 24, quality= 4, buffer_size= 16, down_path= 2.0
-94.0, DOWNF, down_id= 24, buffer_size= 16, cur_path= 1
-**94.0, DOWN, down_id= 22, quality= 3, buffer_size= 16, down_path= 1.0
-94.36, PLAYF=21.0, buffer_size= 16
-94.36, PLAY=22, buffer_size= 8
-95.5, DOWNF, down_id= 22, buffer_size= 8, cur_path= 1
-**95.5, DOWN, down_id= 30, quality= 4, buffer_size= 8, down_path= 1.0
-97.38, DOWNF, down_id= 30, buffer_size= 16, cur_path= 2
-97.38, DOWN, down_id= 30, quality= 2, buffer_size= 16, down_path= 2.0
-98.36, PLAYF=22.0, buffer_size= 16
-98.36, PLAY=23, buffer_size= 4
-99.78, DOWNF, down_id= 30, buffer_size= 4, cur_path= 1
-**99.78, DOWN, down_id= 24, quality= 0, buffer_size= 4, down_path= 1.0
-100.17, DOWNF, down_id= 24, buffer_size= 12, cur_path= 1
-**100.17, DOWN, down_id= 26, quality= 4, buffer_size= 12, down_path= 1.0
-101.69, DOWNF, down_id= 26, buffer_size= 16, cur_path= 2
-101.69, DOWN, down_id= 26, quality= 4, buffer_size= 16, down_path= 2.0
-102.36, PLAYF=23.0, buffer_size= 16
-102.36, PLAY=24, buffer_size= 4
-104.21, DOWNF, down_id= 26, buffer_size= 4, cur_path= 1
-**104.21, DOWN, down_id= 25, quality= 0, buffer_size= 4, down_path= 1.0
-104.77, DOWNF, down_id= 25, buffer_size= 16, cur_path= 1
-104.77, DOWN, down_id= 31, quality= 4, buffer_size= 16, down_path= 1.0
-106.36, PLAYF=24.0, buffer_size= 20
-106.36, PLAY=25, buffer_size= 8
-107.16, DOWNF, down_id= 31, buffer_size= 8, cur_path= 2
-107.16, DOWN, down_id= 26, quality= 0, buffer_size= 8, down_path= 2.0
-108.0, DOWNF, down_id= 26, buffer_size= 16, cur_path= 2
-**108.0, DOWN, down_id= 26, quality= 0, buffer_size= 16, down_path= 2.0
-109.01, DOWNF, down_id= 26, buffer_size= 16, cur_path= 2
-**109.01, DOWN, down_id= 26, quality= 0, buffer_size= 16, down_path= 2.0
-109.83, DOWNF, down_id= 26, buffer_size= 16, cur_path= 2
-**109.83, DOWN, down_id= 30, quality= 3, buffer_size= 16, down_path= 2.0
-110.36, PLAYF=25.0, buffer_size= 16
-110.36, PLAY=26, buffer_size= 4
-110.57, DOWNF, down_id= 30, buffer_size= 4, cur_path= 1
-**110.57, DOWN, down_id= 27, quality= 0, buffer_size= 4, down_path= 1.0
-111.17, DOWNF, down_id= 27, buffer_size= 16, cur_path= 1
-111.17, DOWN, down_id= 27, quality= 0, buffer_size= 16, down_path= 1.0
-111.76, DOWNF, down_id= 27, buffer_size= 16, cur_path= 1
-**111.76, DOWN, down_id= 31, quality= 3, buffer_size= 16, down_path= 1.0
-114.36, PLAYF=26.0, buffer_size= 16
-114.36, PLAY=27, buffer_size= 8
-114.54, DOWNF, down_id= 31, buffer_size= 8, cur_path= 1
-**114.54, DOWN, down_id= 28, quality= 0, buffer_size= 8, down_path= 1.0
-114.78, DOWNF, down_id= 28, buffer_size= 16, cur_path= 2
-114.78, DOWN, down_id= 32, quality= 3, buffer_size= 16, down_path= 2.0
-115.3, DOWNF, down_id= 32, buffer_size= 20, cur_path= 1
-115.3, DOWN, down_id= 32, quality= 3, buffer_size= 20, down_path= 1.0
-118.36, DOWNF, down_id= 32, buffer_size= 20, cur_path= 1
-**118.36, DOWN, down_id= 32, quality= 3, buffer_size= 20, down_path= 1.0
-118.36, PLAYF=27.0, buffer_size= 20
-118.36, PLAY=28, buffer_size= 12
-119.69, DOWNF, down_id= 32, buffer_size= 12, cur_path= 2
-**119.69, DOWN, down_id= 29, quality= 0, buffer_size= 12, down_path= 2.0
-121.05, DOWNF, down_id= 29, buffer_size= 20, cur_path= 2
-121.05, DOWN, down_id= 34, quality= 5, buffer_size= 20, down_path= 2.0
-121.12, DOWNF, down_id= 34, buffer_size= 24, cur_path= 1
-121.12, DOWN, down_id= 34, quality= 5, buffer_size= 24, down_path= 1.0
-122.36, PLAYF=28.0, buffer_size= 24
-122.36, PLAY=29, buffer_size= 12
-126.36, PLAYF=29.0, buffer_size= 12
-126.36, PLAY=30, buffer_size= 8
-128.47, DOWNF, down_id= 34, buffer_size= 8, cur_path= 1
-**128.47, DOWN, down_id= 33, quality= 4, buffer_size= 8, down_path= 1.0
-130.36, PLAYF=30.0, buffer_size= 20
-130.36, PLAY=31, buffer_size= 8
-133.77, DOWNF, down_id= 33, buffer_size= 8, cur_path= 1
-133.77, DOWN, down_id= 38, quality= 4, buffer_size= 8, down_path= 1.0
-133.8, DOWNF, down_id= 38, buffer_size= 20, cur_path= 2
-133.8, DOWN, down_id= 36, quality= 3, buffer_size= 20, down_path= 2.0
-134.36, PLAYF=31.0, buffer_size= 24
-134.36, PLAY=32, buffer_size= 8
-136.74, DOWNF, down_id= 36, buffer_size= 8, cur_path= 2
-136.74, DOWN, down_id= 37, quality= 3, buffer_size= 8, down_path= 2.0
-137.13, DOWNF, down_id= 37, buffer_size= 24, cur_path= 1
-137.13, DOWN, down_id= 37, quality= 3, buffer_size= 24, down_path= 1.0
-138.36, PLAYF=32.0, buffer_size= 24
-138.36, PLAY=33, buffer_size= 12
-138.76, DOWNF, down_id= 37, buffer_size= 12, cur_path= 1
-**138.76, DOWN, down_id= 38, quality= 3, buffer_size= 12, down_path= 1.0
-140.58, DOWNF, down_id= 38, buffer_size= 20, cur_path= 1
-**140.58, DOWN, down_id= 38, quality= 3, buffer_size= 20, down_path= 1.0
-140.86, DOWNF, down_id= 38, buffer_size= 20, cur_path= 2
-**140.87, DOWN, down_id= 40, quality= 3, buffer_size= 20, down_path= 2.0
-142.36, PLAYF=33.0, buffer_size= 24
-142.36, PLAY=34, buffer_size= 12
-142.61, DOWNF, down_id= 40, buffer_size= 12, cur_path= 1
-142.61, DOWN, down_id= 35, quality= 0, buffer_size= 12, down_path= 1.0
-143.08, DOWNF, down_id= 35, buffer_size= 24, cur_path= 1
-143.08, DOWN, down_id= 39, quality= 3, buffer_size= 24, down_path= 1.0
-144.3, DOWNF, down_id= 39, buffer_size= 28, cur_path= 1
-144.3, DOWN, down_id= 39, quality= 3, buffer_size= 28, down_path= 1.0
-145.74, DOWNF, down_id= 39, buffer_size= 28, cur_path= 2
-**145.74, DOWN, down_id= 37, quality= 5, buffer_size= 28, down_path= 2.0
-146.04, DOWNF, down_id= 37, buffer_size= 28, cur_path= 1
-**146.04, DOWN, down_id= 39, quality= 3, buffer_size= 28, down_path= 1.0
-146.36, PLAYF=34.0, buffer_size= 28
-146.36, PLAY=35, buffer_size= 20
-148.68, DOWNF, down_id= 39, buffer_size= 20, cur_path= 1
-**148.68, DOWN, down_id= 40, quality= 3, buffer_size= 20, down_path= 1.0
-150.36, PLAYF=35.0, buffer_size= 24
-150.36, PLAY=36, buffer_size= 16
-151.64, DOWNF, down_id= 40, buffer_size= 16, cur_path= 1
-**151.64, DOWN, down_id= 41, quality= 3, buffer_size= 16, down_path= 1.0
-153.44, DOWNF, down_id= 41, buffer_size= 24, cur_path= 1
-153.44, DOWN, down_id= 41, quality= 3, buffer_size= 24, down_path= 1.0
-154.36, PLAYF=36.0, buffer_size= 24
-154.36, PLAY=37, buffer_size= 16
-155.79, DOWNF, down_id= 41, buffer_size= 16, cur_path= 1
-**155.79, DOWN, down_id= 44, quality= 4, buffer_size= 16, down_path= 1.0
-156.54, DOWNF, down_id= 44, buffer_size= 24, cur_path= 2
-156.54, DOWN, down_id= 42, quality= 3, buffer_size= 24, down_path= 2.0
-158.36, PLAYF=37.0, buffer_size= 28
-158.36, PLAY=38, buffer_size= 12
-159.72, DOWNF, down_id= 42, buffer_size= 12, cur_path= 2
-159.72, DOWN, down_id= 45, quality= 4, buffer_size= 12, down_path= 2.0
-161.09, DOWNF, down_id= 45, buffer_size= 28, cur_path= 1
-161.09, DOWN, down_id= 43, quality= 3, buffer_size= 28, down_path= 1.0
-162.28, DOWNF, down_id= 43, buffer_size= 32, cur_path= 1
-162.28, DOWN, down_id= 42, quality= 2, buffer_size= 32, down_path= 1.0
-162.36, PLAYF=38.0, buffer_size= 32
-162.36, PLAY=39, buffer_size= 20
-164.44, DOWNF, down_id= 42, buffer_size= 20, cur_path= 1
-**164.44, DOWN, down_id= 46, quality= 4, buffer_size= 20, down_path= 1.0
-166.36, PLAYF=39.0, buffer_size= 32
-166.36, PLAY=40, buffer_size= 16
-169.59, DOWNF, down_id= 46, buffer_size= 16, cur_path= 2
-169.6, DOWN, down_id= 45, quality= 3, buffer_size= 16, down_path= 2.0
-170.36, PLAYF=40.0, buffer_size= 28
-170.36, PLAY=41, buffer_size= 16
-171.92, DOWNF, down_id= 45, buffer_size= 16, cur_path= 1
-**171.92, DOWN, down_id= 48, quality= 4, buffer_size= 16, down_path= 1.0
-172.91, DOWNF, down_id= 48, buffer_size= 28, cur_path= 2
-172.91, DOWN, down_id= 48, quality= 4, buffer_size= 28, down_path= 2.0
-174.36, PLAYF=41.0, buffer_size= 28
-174.36, PLAY=42, buffer_size= 16
-178.36, PLAYF=42.0, buffer_size= 16
-178.36, PLAY=43, buffer_size= 12
-178.9, DOWNF, down_id= 48, buffer_size= 12, cur_path= 2
-**178.9, DOWN, down_id= 50, quality= 4, buffer_size= 12, down_path= 2.0
-179.4, DOWNF, down_id= 50, buffer_size= 24, cur_path= 1
-179.4, DOWN, down_id= 48, quality= 3, buffer_size= 24, down_path= 1.0
-182.36, PLAYF=43.0, buffer_size= 24
-182.36, PLAY=44, buffer_size= 12
-184.23, DOWNF, down_id= 48, buffer_size= 12, cur_path= 1
-**184.23, DOWN, down_id= 47, quality= 2, buffer_size= 12, down_path= 1.0
-186.36, PLAYF=44.0, buffer_size= 24
-186.36, PLAY=45, buffer_size= 8
-186.66, DOWNF, down_id= 47, buffer_size= 8, cur_path= 2
-186.66, DOWN, down_id= 49, quality= 4, buffer_size= 8, down_path= 2.0
-186.79, DOWNF, down_id= 49, buffer_size= 24, cur_path= 1
-186.8, DOWN, down_id= 52, quality= 6, buffer_size= 24, down_path= 1.0
-190.36, PLAYF=45.0, buffer_size= 28
-190.36, PLAY=46, buffer_size= 12
-192.94, DOWNF, down_id= 52, buffer_size= 12, cur_path= 2
-192.94, DOWN, down_id= 50, quality= 4, buffer_size= 12, down_path= 2.0
-194.36, PLAYF=46.0, buffer_size= 24
-194.36, PLAY=47, buffer_size= 12
-198.36, PLAYF=47.0, buffer_size= 12
-198.36, PLAY=48, buffer_size= 8
-199.34, DOWNF, down_id= 50, buffer_size= 8, cur_path= 2
-**199.34, DOWN, down_id= 51, quality= 2, buffer_size= 8, down_path= 2.0
-200.05, DOWNF, down_id= 51, buffer_size= 20, cur_path= 1
-200.05, DOWN, down_id= 51, quality= 2, buffer_size= 20, down_path= 1.0
-202.36, PLAYF=48.0, buffer_size= 20
-202.36, PLAY=49, buffer_size= 8
-203.01, DOWNF, down_id= 51, buffer_size= 8, cur_path= 1
-**203.01, DOWN, down_id= 56, quality= 4, buffer_size= 8, down_path= 1.0
-203.51, DOWNF, down_id= 56, buffer_size= 20, cur_path= 2
-203.51, DOWN, down_id= 54, quality= 3, buffer_size= 20, down_path= 2.0
-206.36, PLAYF=49.0, buffer_size= 24
-206.36, PLAY=50, buffer_size= 8
-209.3, DOWNF, down_id= 54, buffer_size= 8, cur_path= 2
-209.3, DOWN, down_id= 54, quality= 4, buffer_size= 8, down_path= 2.0
-210.36, PLAYF=50.0, buffer_size= 20
-210.36, PLAY=51, buffer_size= 8
-211.27, DOWNF, down_id= 54, buffer_size= 8, cur_path= 1
-**211.28, DOWN, down_id= 52, quality= 3, buffer_size= 8, down_path= 1.0
-214.36, PLAYF=51.0, buffer_size= 16
-214.36, PLAY=52, buffer_size= 8
-217.89, DOWNF, down_id= 52, buffer_size= 8, cur_path= 1
-**217.89, DOWN, down_id= 53, quality= 0, buffer_size= 8, down_path= 1.0
-218.36, PLAYF=52.0, buffer_size= 16
-218.41, FREEZEF, buffer_size= 16
-218.46, FREEZEF, buffer_size= 16
-218.51, FREEZEF, buffer_size= 16
-218.56, FREEZEF, buffer_size= 16
-218.61, FREEZEF, buffer_size= 16
-218.66, FREEZEF, buffer_size= 16
-218.71, FREEZEF, buffer_size= 16
-218.76, FREEZEF, buffer_size= 16
-218.81, FREEZEF, buffer_size= 16
-218.86, FREEZEF, buffer_size= 16
-218.91, FREEZEF, buffer_size= 16
-218.96, FREEZEF, buffer_size= 16
-219.01, FREEZEF, buffer_size= 16
-219.06, FREEZEF, buffer_size= 16
-219.11, FREEZEF, buffer_size= 16
-219.16, FREEZEF, buffer_size= 16
-219.21, FREEZEF, buffer_size= 16
-219.26, FREEZEF, buffer_size= 16
-219.31, FREEZEF, buffer_size= 16
-219.34, DOWNF, down_id= 53, buffer_size= 16, cur_path= 1
-219.34, DOWN, down_id= 55, quality= 1, buffer_size= 16, down_path= 1.0
-219.36, FREEZEF, buffer_size= 20
-219.36, PLAY=53, buffer_size= 8
-220.73, DOWNF, down_id= 55, buffer_size= 8, cur_path= 1
-220.73, DOWN, down_id= 57, quality= 1, buffer_size= 8, down_path= 1.0
-222.49, DOWNF, down_id= 57, buffer_size= 20, cur_path= 2
-222.49, DOWN, down_id= 56, quality= 1, buffer_size= 20, down_path= 2.0
-222.51, DOWNF, down_id= 56, buffer_size= 20, cur_path= 1
-**222.51, DOWN, down_id= 56, quality= 1, buffer_size= 20, down_path= 1.0
-223.36, PLAYF=53.0, buffer_size= 20
-223.36, PLAY=54, buffer_size= 12
-224.23, DOWNF, down_id= 56, buffer_size= 12, cur_path= 1
-**224.23, DOWN, down_id= 55, quality= 3, buffer_size= 12, down_path= 1.0
-225.76, DOWNF, down_id= 55, buffer_size= 16, cur_path= 2
-**225.76, DOWN, down_id= 55, quality= 3, buffer_size= 16, down_path= 2.0
-225.97, DOWNF, down_id= 55, buffer_size= 16, cur_path= 1
-**225.97, DOWN, down_id= 56, quality= 2, buffer_size= 16, down_path= 1.0
-227.36, PLAYF=54.0, buffer_size= 16
-227.36, PLAY=55, buffer_size= 8
-227.77, DOWNF, down_id= 56, buffer_size= 8, cur_path= 1
-**near_end227.77, DOWN, down_id= 57, quality= 4, buffer_size= 8, down_path= 1.0
-229.98, DOWNF, down_id= 57, buffer_size= 12, cur_path= 2
-**229.98, DOWN, down_id= 57, quality= 4, buffer_size= 12, down_path= 2.0
-231.03, DOWNF, down_id= 57, buffer_size= 12, cur_path= 1
-**231.03, DOWN, down_id= 57, quality= 4, buffer_size= 12, down_path= 1.0
-231.36, PLAYF=55.0, buffer_size= 12
-231.36, PLAY=56, buffer_size= 4
-233.69, DOWNF, down_id= 57, buffer_size= 4, cur_path= 1
-**233.69, DOWN, down_id= 58, quality= 4, buffer_size= 4, down_path= 1.0
-235.36, PLAYF=56.0, buffer_size= 12
-235.36, PLAY=57, buffer_size= 0
-235.59, DOWNF, down_id= 58, buffer_size= 0, cur_path= 1
-235.59, DOWN, down_id= 58, quality= 1, buffer_size= 0, down_path= 1.0
-236.13, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
-**236.13, DOWN, down_id= 58, quality= 1, buffer_size= 8, down_path= 1.0
-236.76, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
-**236.76, DOWN, down_id= 58, quality= 1, buffer_size= 8, down_path= 1.0
-237.36, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
-**237.36, DOWN, down_id= 58, quality= 1, buffer_size= 8, down_path= 1.0
-237.95, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
-**237.95, DOWN, down_id= 58, quality= 1, buffer_size= 8, down_path= 1.0
-238.57, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
-**238.57, DOWN, down_id= 58, quality= 1, buffer_size= 8, down_path= 1.0
-239.2, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
-**239.2, DOWN, down_id= 58, quality= 1, buffer_size= 8, down_path= 1.0
-239.36, PLAYF=57.0, buffer_size= 8
-239.36, PLAY=58, buffer_size= 0
-239.86, DOWNF, down_id= 58, buffer_size= 0, cur_path= 1
-**239.86, DOWN, down_id= 59, quality= 1, buffer_size= 0, down_path= 1.0
-240.58, DOWNF, down_id= 59, buffer_size= 8, cur_path= 1
-240.63, SLEEPF, buffer_size= 8, cur_path= 1
-240.68, SLEEPF, buffer_size= 8, cur_path= 1
-240.73, SLEEPF, buffer_size= 8, cur_path= 1
-240.78, SLEEPF, buffer_size= 8, cur_path= 1
-240.83, SLEEPF, buffer_size= 8, cur_path= 1
-240.88, SLEEPF, buffer_size= 8, cur_path= 1
-240.93, SLEEPF, buffer_size= 8, cur_path= 1
-240.98, SLEEPF, buffer_size= 8, cur_path= 1
-241.03, SLEEPF, buffer_size= 8, cur_path= 1
-241.08, SLEEPF, buffer_size= 8, cur_path= 1
-241.13, SLEEPF, buffer_size= 8, cur_path= 1
-241.18, SLEEPF, buffer_size= 8, cur_path= 1
-241.23, SLEEPF, buffer_size= 8, cur_path= 1
-241.28, SLEEPF, buffer_size= 8, cur_path= 1
-241.33, SLEEPF, buffer_size= 8, cur_path= 1
-241.38, SLEEPF, buffer_size= 8, cur_path= 1
-241.43, SLEEPF, buffer_size= 8, cur_path= 1
-241.48, SLEEPF, buffer_size= 8, cur_path= 1
-241.53, SLEEPF, buffer_size= 8, cur_path= 1
-241.58, SLEEPF, buffer_size= 8, cur_path= 1
-241.6, DOWNF, down_id= 59, buffer_size= 8, cur_path= 2
-241.63, SLEEPF, buffer_size= 8, cur_path= 1
-241.65, SLEEPF, buffer_size= 8, cur_path= 2
-241.68, SLEEPF, buffer_size= 8, cur_path= 1
-241.7, SLEEPF, buffer_size= 8, cur_path= 2
-241.73, SLEEPF, buffer_size= 8, cur_path= 1
-241.75, SLEEPF, buffer_size= 8, cur_path= 2
-241.78, SLEEPF, buffer_size= 8, cur_path= 1
-241.8, SLEEPF, buffer_size= 8, cur_path= 2
-241.83, SLEEPF, buffer_size= 8, cur_path= 1
-241.85, SLEEPF, buffer_size= 8, cur_path= 2
-241.88, SLEEPF, buffer_size= 8, cur_path= 1
-241.9, SLEEPF, buffer_size= 8, cur_path= 2
-241.93, SLEEPF, buffer_size= 8, cur_path= 1
-241.95, SLEEPF, buffer_size= 8, cur_path= 2
-241.98, SLEEPF, buffer_size= 8, cur_path= 1
-242.0, SLEEPF, buffer_size= 8, cur_path= 2
-242.03, SLEEPF, buffer_size= 8, cur_path= 1
-242.05, SLEEPF, buffer_size= 8, cur_path= 2
-242.08, SLEEPF, buffer_size= 8, cur_path= 1
-242.1, SLEEPF, buffer_size= 8, cur_path= 2
-242.13, SLEEPF, buffer_size= 8, cur_path= 1
-242.15, SLEEPF, buffer_size= 8, cur_path= 2
-242.18, SLEEPF, buffer_size= 8, cur_path= 1
-242.2, SLEEPF, buffer_size= 8, cur_path= 2
-242.23, SLEEPF, buffer_size= 8, cur_path= 1
-242.25, SLEEPF, buffer_size= 8, cur_path= 2
-242.28, SLEEPF, buffer_size= 8, cur_path= 1
-242.3, SLEEPF, buffer_size= 8, cur_path= 2
-242.33, SLEEPF, buffer_size= 8, cur_path= 1
-242.35, SLEEPF, buffer_size= 8, cur_path= 2
-242.38, SLEEPF, buffer_size= 8, cur_path= 1
-242.4, SLEEPF, buffer_size= 8, cur_path= 2
-242.43, SLEEPF, buffer_size= 8, cur_path= 1
-242.45, SLEEPF, buffer_size= 8, cur_path= 2
-242.48, SLEEPF, buffer_size= 8, cur_path= 1
-242.5, SLEEPF, buffer_size= 8, cur_path= 2
-242.53, SLEEPF, buffer_size= 8, cur_path= 1
-242.55, SLEEPF, buffer_size= 8, cur_path= 2
-242.58, SLEEPF, buffer_size= 8, cur_path= 1
-242.6, SLEEPF, buffer_size= 8, cur_path= 2
-242.63, SLEEPF, buffer_size= 8, cur_path= 1
-242.65, SLEEPF, buffer_size= 8, cur_path= 2
-242.68, SLEEPF, buffer_size= 8, cur_path= 1
-242.7, SLEEPF, buffer_size= 8, cur_path= 2
-242.73, SLEEPF, buffer_size= 8, cur_path= 1
-242.75, SLEEPF, buffer_size= 8, cur_path= 2
-242.78, SLEEPF, buffer_size= 8, cur_path= 1
-242.8, SLEEPF, buffer_size= 8, cur_path= 2
-242.83, SLEEPF, buffer_size= 8, cur_path= 1
-242.85, SLEEPF, buffer_size= 8, cur_path= 2
-242.88, SLEEPF, buffer_size= 8, cur_path= 1
-242.9, SLEEPF, buffer_size= 8, cur_path= 2
-242.93, SLEEPF, buffer_size= 8, cur_path= 1
-242.95, SLEEPF, buffer_size= 8, cur_path= 2
-242.98, SLEEPF, buffer_size= 8, cur_path= 1
-243.0, SLEEPF, buffer_size= 8, cur_path= 2
-243.03, SLEEPF, buffer_size= 8, cur_path= 1
-243.05, SLEEPF, buffer_size= 8, cur_path= 2
-243.08, SLEEPF, buffer_size= 8, cur_path= 1
-243.1, SLEEPF, buffer_size= 8, cur_path= 2
-243.13, SLEEPF, buffer_size= 8, cur_path= 1
-243.15, SLEEPF, buffer_size= 8, cur_path= 2
-243.18, SLEEPF, buffer_size= 8, cur_path= 1
-243.2, SLEEPF, buffer_size= 8, cur_path= 2
-243.23, SLEEPF, buffer_size= 8, cur_path= 1
-243.25, SLEEPF, buffer_size= 8, cur_path= 2
-243.28, SLEEPF, buffer_size= 8, cur_path= 1
-243.3, SLEEPF, buffer_size= 8, cur_path= 2
-243.33, SLEEPF, buffer_size= 8, cur_path= 1
-243.35, SLEEPF, buffer_size= 8, cur_path= 2
-243.36, PLAYF=58.0, buffer_size= 8
-243.36, PLAY=59, buffer_size= 0
-243.38, SLEEPF, buffer_size= 0, cur_path= 1
-243.4, SLEEPF, buffer_size= 0, cur_path= 2
-243.43, SLEEPF, buffer_size= 0, cur_path= 1
-243.45, SLEEPF, buffer_size= 0, cur_path= 2
-243.48, SLEEPF, buffer_size= 0, cur_path= 1
-243.5, SLEEPF, buffer_size= 0, cur_path= 2
-243.53, SLEEPF, buffer_size= 0, cur_path= 1
-243.55, SLEEPF, buffer_size= 0, cur_path= 2
-243.58, SLEEPF, buffer_size= 0, cur_path= 1
-243.6, SLEEPF, buffer_size= 0, cur_path= 2
-243.63, SLEEPF, buffer_size= 0, cur_path= 1
-243.65, SLEEPF, buffer_size= 0, cur_path= 2
-243.68, SLEEPF, buffer_size= 0, cur_path= 1
-243.7, SLEEPF, buffer_size= 0, cur_path= 2
-243.73, SLEEPF, buffer_size= 0, cur_path= 1
-243.75, SLEEPF, buffer_size= 0, cur_path= 2
-243.78, SLEEPF, buffer_size= 0, cur_path= 1
-243.8, SLEEPF, buffer_size= 0, cur_path= 2
-243.83, SLEEPF, buffer_size= 0, cur_path= 1
-243.85, SLEEPF, buffer_size= 0, cur_path= 2
-243.88, SLEEPF, buffer_size= 0, cur_path= 1
-243.9, SLEEPF, buffer_size= 0, cur_path= 2
-243.93, SLEEPF, buffer_size= 0, cur_path= 1
-243.95, SLEEPF, buffer_size= 0, cur_path= 2
-243.98, SLEEPF, buffer_size= 0, cur_path= 1
-244.0, SLEEPF, buffer_size= 0, cur_path= 2
-244.03, SLEEPF, buffer_size= 0, cur_path= 1
-244.05, SLEEPF, buffer_size= 0, cur_path= 2
-244.08, SLEEPF, buffer_size= 0, cur_path= 1
-244.1, SLEEPF, buffer_size= 0, cur_path= 2
-244.13, SLEEPF, buffer_size= 0, cur_path= 1
-244.15, SLEEPF, buffer_size= 0, cur_path= 2
-244.18, SLEEPF, buffer_size= 0, cur_path= 1
-244.2, SLEEPF, buffer_size= 0, cur_path= 2
-244.23, SLEEPF, buffer_size= 0, cur_path= 1
-244.25, SLEEPF, buffer_size= 0, cur_path= 2
-244.28, SLEEPF, buffer_size= 0, cur_path= 1
-244.3, SLEEPF, buffer_size= 0, cur_path= 2
-244.33, SLEEPF, buffer_size= 0, cur_path= 1
-244.35, SLEEPF, buffer_size= 0, cur_path= 2
-244.38, SLEEPF, buffer_size= 0, cur_path= 1
-244.4, SLEEPF, buffer_size= 0, cur_path= 2
-244.43, SLEEPF, buffer_size= 0, cur_path= 1
-244.45, SLEEPF, buffer_size= 0, cur_path= 2
-244.48, SLEEPF, buffer_size= 0, cur_path= 1
-244.5, SLEEPF, buffer_size= 0, cur_path= 2
-244.53, SLEEPF, buffer_size= 0, cur_path= 1
-244.55, SLEEPF, buffer_size= 0, cur_path= 2
-244.58, SLEEPF, buffer_size= 0, cur_path= 1
-244.6, SLEEPF, buffer_size= 0, cur_path= 2
-244.63, SLEEPF, buffer_size= 0, cur_path= 1
-244.65, SLEEPF, buffer_size= 0, cur_path= 2
-244.68, SLEEPF, buffer_size= 0, cur_path= 1
-244.7, SLEEPF, buffer_size= 0, cur_path= 2
-244.73, SLEEPF, buffer_size= 0, cur_path= 1
-244.75, SLEEPF, buffer_size= 0, cur_path= 2
-244.78, SLEEPF, buffer_size= 0, cur_path= 1
-244.8, SLEEPF, buffer_size= 0, cur_path= 2
-244.83, SLEEPF, buffer_size= 0, cur_path= 1
-244.85, SLEEPF, buffer_size= 0, cur_path= 2
-244.88, SLEEPF, buffer_size= 0, cur_path= 1
-244.9, SLEEPF, buffer_size= 0, cur_path= 2
-244.93, SLEEPF, buffer_size= 0, cur_path= 1
-244.95, SLEEPF, buffer_size= 0, cur_path= 2
-244.98, SLEEPF, buffer_size= 0, cur_path= 1
-245.0, SLEEPF, buffer_size= 0, cur_path= 2
-245.03, SLEEPF, buffer_size= 0, cur_path= 1
-245.05, SLEEPF, buffer_size= 0, cur_path= 2
-245.08, SLEEPF, buffer_size= 0, cur_path= 1
-245.1, SLEEPF, buffer_size= 0, cur_path= 2
-245.13, SLEEPF, buffer_size= 0, cur_path= 1
-245.15, SLEEPF, buffer_size= 0, cur_path= 2
-245.18, SLEEPF, buffer_size= 0, cur_path= 1
-245.2, SLEEPF, buffer_size= 0, cur_path= 2
-245.23, SLEEPF, buffer_size= 0, cur_path= 1
-245.25, SLEEPF, buffer_size= 0, cur_path= 2
-245.28, SLEEPF, buffer_size= 0, cur_path= 1
-245.3, SLEEPF, buffer_size= 0, cur_path= 2
-245.33, SLEEPF, buffer_size= 0, cur_path= 1
-245.35, SLEEPF, buffer_size= 0, cur_path= 2
-245.38, SLEEPF, buffer_size= 0, cur_path= 1
-245.4, SLEEPF, buffer_size= 0, cur_path= 2
-245.43, SLEEPF, buffer_size= 0, cur_path= 1
-245.45, SLEEPF, buffer_size= 0, cur_path= 2
-245.48, SLEEPF, buffer_size= 0, cur_path= 1
-245.5, SLEEPF, buffer_size= 0, cur_path= 2
-245.53, SLEEPF, buffer_size= 0, cur_path= 1
-245.55, SLEEPF, buffer_size= 0, cur_path= 2
-245.58, SLEEPF, buffer_size= 0, cur_path= 1
-245.6, SLEEPF, buffer_size= 0, cur_path= 2
-245.63, SLEEPF, buffer_size= 0, cur_path= 1
-245.65, SLEEPF, buffer_size= 0, cur_path= 2
-245.68, SLEEPF, buffer_size= 0, cur_path= 1
-245.7, SLEEPF, buffer_size= 0, cur_path= 2
-245.73, SLEEPF, buffer_size= 0, cur_path= 1
-245.75, SLEEPF, buffer_size= 0, cur_path= 2
-245.78, SLEEPF, buffer_size= 0, cur_path= 1
-245.8, SLEEPF, buffer_size= 0, cur_path= 2
-245.83, SLEEPF, buffer_size= 0, cur_path= 1
-245.85, SLEEPF, buffer_size= 0, cur_path= 2
-245.88, SLEEPF, buffer_size= 0, cur_path= 1
-245.9, SLEEPF, buffer_size= 0, cur_path= 2
-245.93, SLEEPF, buffer_size= 0, cur_path= 1
-245.95, SLEEPF, buffer_size= 0, cur_path= 2
-245.98, SLEEPF, buffer_size= 0, cur_path= 1
-246.0, SLEEPF, buffer_size= 0, cur_path= 2
-246.03, SLEEPF, buffer_size= 0, cur_path= 1
-246.05, SLEEPF, buffer_size= 0, cur_path= 2
-246.08, SLEEPF, buffer_size= 0, cur_path= 1
-246.1, SLEEPF, buffer_size= 0, cur_path= 2
-246.13, SLEEPF, buffer_size= 0, cur_path= 1
-246.15, SLEEPF, buffer_size= 0, cur_path= 2
-246.18, SLEEPF, buffer_size= 0, cur_path= 1
-246.2, SLEEPF, buffer_size= 0, cur_path= 2
-246.23, SLEEPF, buffer_size= 0, cur_path= 1
-246.25, SLEEPF, buffer_size= 0, cur_path= 2
-246.28, SLEEPF, buffer_size= 0, cur_path= 1
-246.3, SLEEPF, buffer_size= 0, cur_path= 2
-246.33, SLEEPF, buffer_size= 0, cur_path= 1
-246.35, SLEEPF, buffer_size= 0, cur_path= 2
-246.38, SLEEPF, buffer_size= 0, cur_path= 1
-246.4, SLEEPF, buffer_size= 0, cur_path= 2
-246.43, SLEEPF, buffer_size= 0, cur_path= 1
-246.45, SLEEPF, buffer_size= 0, cur_path= 2
-246.48, SLEEPF, buffer_size= 0, cur_path= 1
-246.5, SLEEPF, buffer_size= 0, cur_path= 2
-246.53, SLEEPF, buffer_size= 0, cur_path= 1
-246.55, SLEEPF, buffer_size= 0, cur_path= 2
-246.58, SLEEPF, buffer_size= 0, cur_path= 1
-246.6, SLEEPF, buffer_size= 0, cur_path= 2
-246.63, SLEEPF, buffer_size= 0, cur_path= 1
-246.65, SLEEPF, buffer_size= 0, cur_path= 2
-246.68, SLEEPF, buffer_size= 0, cur_path= 1
-246.7, SLEEPF, buffer_size= 0, cur_path= 2
-246.73, SLEEPF, buffer_size= 0, cur_path= 1
-246.75, SLEEPF, buffer_size= 0, cur_path= 2
-246.78, SLEEPF, buffer_size= 0, cur_path= 1
-246.8, SLEEPF, buffer_size= 0, cur_path= 2
-246.83, SLEEPF, buffer_size= 0, cur_path= 1
-246.85, SLEEPF, buffer_size= 0, cur_path= 2
-246.88, SLEEPF, buffer_size= 0, cur_path= 1
-246.9, SLEEPF, buffer_size= 0, cur_path= 2
-246.93, SLEEPF, buffer_size= 0, cur_path= 1
-246.95, SLEEPF, buffer_size= 0, cur_path= 2
-246.98, SLEEPF, buffer_size= 0, cur_path= 1
-247.0, SLEEPF, buffer_size= 0, cur_path= 2
-247.03, SLEEPF, buffer_size= 0, cur_path= 1
-247.05, SLEEPF, buffer_size= 0, cur_path= 2
-247.08, SLEEPF, buffer_size= 0, cur_path= 1
-247.1, SLEEPF, buffer_size= 0, cur_path= 2
-247.13, SLEEPF, buffer_size= 0, cur_path= 1
-247.15, SLEEPF, buffer_size= 0, cur_path= 2
-247.18, SLEEPF, buffer_size= 0, cur_path= 1
-247.2, SLEEPF, buffer_size= 0, cur_path= 2
-247.23, SLEEPF, buffer_size= 0, cur_path= 1
-247.25, SLEEPF, buffer_size= 0, cur_path= 2
-247.28, SLEEPF, buffer_size= 0, cur_path= 1
-247.3, SLEEPF, buffer_size= 0, cur_path= 2
-247.33, SLEEPF, buffer_size= 0, cur_path= 1
-247.35, SLEEPF, buffer_size= 0, cur_path= 2
-247.36, PLAYF=59.0, buffer_size= 0
+0.05, DOWN, down_id= 1, quality= 0, buffer_size= 0, down_path= 2.0
+1.15, DOWNF, down_id= 1, buffer_size= 8, cur_path= 2
+1.15, DOWN, down_id= 4, quality= 1, buffer_size= 8, down_path= 2.0
+1.44, DOWNF, down_id= 4, buffer_size= 12, cur_path= 1
+1.44, PLAY=0, buffer_size= 4
+1.44, DOWN, down_id= 2, quality= 0, buffer_size= 4, down_path= 1.0
+2.89, DOWNF, down_id= 2, buffer_size= 16, cur_path= 2
+2.89, DOWN, down_id= 4, quality= 1, buffer_size= 16, down_path= 2.0
+3.08, DOWNF, down_id= 4, buffer_size= 16, cur_path= 1
+**3.08, DOWN, down_id= 4, quality= 1, buffer_size= 16, down_path= 1.0
+4.72, DOWNF, down_id= 4, buffer_size= 16, cur_path= 2
+**4.72, DOWN, down_id= 4, quality= 1, buffer_size= 16, down_path= 2.0
+5.44, PLAYF=0.0, buffer_size= 16
+5.44, PLAY=1, buffer_size= 8
+5.65, DOWNF, down_id= 4, buffer_size= 8, cur_path= 1
+**5.65, DOWN, down_id= 3, quality= 0, buffer_size= 8, down_path= 1.0
+6.69, DOWNF, down_id= 3, buffer_size= 16, cur_path= 2
+6.69, DOWN, down_id= 5, quality= 1, buffer_size= 16, down_path= 2.0
+7.51, DOWNF, down_id= 5, buffer_size= 20, cur_path= 1
+7.51, DOWN, down_id= 5, quality= 1, buffer_size= 20, down_path= 1.0
+8.48, DOWNF, down_id= 5, buffer_size= 20, cur_path= 2
+**8.48, DOWN, down_id= 5, quality= 1, buffer_size= 20, down_path= 2.0
+9.44, PLAYF=1.0, buffer_size= 20
+9.44, PLAY=2, buffer_size= 12
+10.14, DOWNF, down_id= 5, buffer_size= 12, cur_path= 1
+**10.14, DOWN, down_id= 6, quality= 1, buffer_size= 12, down_path= 1.0
+10.15, DOWNF, down_id= 6, buffer_size= 20, cur_path= 2
+10.15, DOWN, down_id= 7, quality= 3, buffer_size= 20, down_path= 2.0
+13.44, PLAYF=2.0, buffer_size= 24
+13.44, PLAY=3, buffer_size= 8
+13.87, DOWNF, down_id= 7, buffer_size= 8, cur_path= 1
+13.87, DOWN, down_id= 8, quality= 3, buffer_size= 8, down_path= 1.0
+16.06, DOWNF, down_id= 8, buffer_size= 24, cur_path= 2
+16.06, DOWN, down_id= 8, quality= 3, buffer_size= 24, down_path= 2.0
+17.44, PLAYF=3.0, buffer_size= 24
+17.44, PLAY=4, buffer_size= 12
+19.27, DOWNF, down_id= 8, buffer_size= 12, cur_path= 1
+**19.27, DOWN, down_id= 8, quality= 2, buffer_size= 12, down_path= 1.0
+20.72, DOWNF, down_id= 8, buffer_size= 20, cur_path= 2
+**20.72, DOWN, down_id= 8, quality= 1, buffer_size= 20, down_path= 2.0
+21.44, PLAYF=4.0, buffer_size= 20
+21.44, PLAY=5, buffer_size= 12
+22.79, DOWNF, down_id= 8, buffer_size= 12, cur_path= 2
+**22.79, DOWN, down_id= 9, quality= 2, buffer_size= 12, down_path= 2.0
+24.65, DOWNF, down_id= 9, buffer_size= 20, cur_path= 1
+24.65, DOWN, down_id= 9, quality= 2, buffer_size= 20, down_path= 1.0
+25.44, PLAYF=5.0, buffer_size= 20
+25.44, PLAY=6, buffer_size= 8
+26.98, DOWNF, down_id= 9, buffer_size= 8, cur_path= 1
+**26.98, DOWN, down_id= 10, quality= 1, buffer_size= 8, down_path= 1.0
+27.41, DOWNF, down_id= 10, buffer_size= 20, cur_path= 2
+27.41, DOWN, down_id= 12, quality= 4, buffer_size= 20, down_path= 2.0
+27.79, DOWNF, down_id= 12, buffer_size= 24, cur_path= 1
+27.79, DOWN, down_id= 12, quality= 4, buffer_size= 24, down_path= 1.0
+29.44, PLAYF=6.0, buffer_size= 24
+29.44, PLAY=7, buffer_size= 12
+31.04, DOWNF, down_id= 12, buffer_size= 12, cur_path= 1
+**31.04, DOWN, down_id= 13, quality= 4, buffer_size= 12, down_path= 1.0
+33.44, PLAYF=7.0, buffer_size= 24
+33.44, PLAY=8, buffer_size= 12
+34.5, DOWNF, down_id= 13, buffer_size= 12, cur_path= 1
+34.5, DOWN, down_id= 14, quality= 4, buffer_size= 12, down_path= 1.0
+35.21, DOWNF, down_id= 14, buffer_size= 24, cur_path= 2
+35.21, DOWN, down_id= 11, quality= 3, buffer_size= 24, down_path= 2.0
+36.38, DOWNF, down_id= 11, buffer_size= 28, cur_path= 1
+36.38, DOWN, down_id= 14, quality= 4, buffer_size= 28, down_path= 1.0
+37.44, PLAYF=8.0, buffer_size= 28
+37.44, PLAY=9, buffer_size= 16
+38.58, DOWNF, down_id= 14, buffer_size= 16, cur_path= 2
+**38.58, DOWN, down_id= 15, quality= 4, buffer_size= 16, down_path= 2.0
+38.71, DOWNF, down_id= 15, buffer_size= 28, cur_path= 1
+38.71, DOWN, down_id= 17, quality= 6, buffer_size= 28, down_path= 1.0
+41.44, PLAYF=9.0, buffer_size= 32
+41.44, PLAY=10, buffer_size= 16
+43.87, DOWNF, down_id= 17, buffer_size= 16, cur_path= 1
+43.87, DOWN, down_id= 16, quality= 4, buffer_size= 16, down_path= 1.0
+44.21, DOWNF, down_id= 16, buffer_size= 32, cur_path= 2
+44.21, DOWN, down_id= 16, quality= 4, buffer_size= 32, down_path= 2.0
+45.44, PLAYF=10.0, buffer_size= 32
+45.44, PLAY=11, buffer_size= 20
+49.44, PLAYF=11.0, buffer_size= 20
+49.44, PLAY=12, buffer_size= 16
+49.51, DOWNF, down_id= 16, buffer_size= 16, cur_path= 1
+**49.51, DOWN, down_id= 18, quality= 4, buffer_size= 16, down_path= 1.0
+52.97, DOWNF, down_id= 18, buffer_size= 28, cur_path= 1
+52.97, DOWN, down_id= 18, quality= 4, buffer_size= 28, down_path= 1.0
+53.44, PLAYF=12.0, buffer_size= 28
+53.44, PLAY=13, buffer_size= 20
+54.95, DOWNF, down_id= 18, buffer_size= 20, cur_path= 2
+**54.95, DOWN, down_id= 19, quality= 4, buffer_size= 20, down_path= 2.0
+55.66, DOWNF, down_id= 19, buffer_size= 28, cur_path= 1
+55.66, DOWN, down_id= 19, quality= 4, buffer_size= 28, down_path= 1.0
+57.44, PLAYF=13.0, buffer_size= 28
+57.44, PLAY=14, buffer_size= 16
+59.21, DOWNF, down_id= 19, buffer_size= 16, cur_path= 1
+**59.21, DOWN, down_id= 20, quality= 4, buffer_size= 16, down_path= 1.0
+61.44, PLAYF=14.0, buffer_size= 28
+61.44, PLAY=15, buffer_size= 16
+62.24, DOWNF, down_id= 20, buffer_size= 16, cur_path= 1
+62.24, DOWN, down_id= 21, quality= 4, buffer_size= 16, down_path= 1.0
+63.96, DOWNF, down_id= 21, buffer_size= 28, cur_path= 1
+63.96, DOWN, down_id= 21, quality= 4, buffer_size= 28, down_path= 1.0
+65.41, DOWNF, down_id= 21, buffer_size= 28, cur_path= 1
+**65.41, DOWN, down_id= 21, quality= 4, buffer_size= 28, down_path= 1.0
+65.44, PLAYF=15.0, buffer_size= 28
+65.44, PLAY=16, buffer_size= 20
+65.61, DOWNF, down_id= 21, buffer_size= 20, cur_path= 2
+**65.61, DOWN, down_id= 22, quality= 4, buffer_size= 20, down_path= 2.0
+67.14, DOWNF, down_id= 22, buffer_size= 28, cur_path= 1
+67.14, DOWN, down_id= 22, quality= 4, buffer_size= 28, down_path= 1.0
+69.44, PLAYF=16.0, buffer_size= 28
+69.44, PLAY=17, buffer_size= 16
+70.98, DOWNF, down_id= 22, buffer_size= 16, cur_path= 1
+**70.98, DOWN, down_id= 23, quality= 3, buffer_size= 16, down_path= 1.0
+72.25, DOWNF, down_id= 23, buffer_size= 28, cur_path= 1
+72.25, DOWN, down_id= 23, quality= 4, buffer_size= 28, down_path= 1.0
+73.44, PLAYF=17.0, buffer_size= 28
+73.44, PLAY=18, buffer_size= 20
+73.74, DOWNF, down_id= 23, buffer_size= 20, cur_path= 2
+**73.74, DOWN, down_id= 24, quality= 4, buffer_size= 20, down_path= 2.0
+74.75, DOWNF, down_id= 24, buffer_size= 28, cur_path= 1
+74.75, DOWN, down_id= 24, quality= 4, buffer_size= 28, down_path= 1.0
+77.43, DOWNF, down_id= 24, buffer_size= 28, cur_path= 1
+**77.43, DOWN, down_id= 26, quality= 3, buffer_size= 28, down_path= 1.0
+77.44, PLAYF=18.0, buffer_size= 32
+77.44, PLAY=19, buffer_size= 20
+79.22, DOWNF, down_id= 26, buffer_size= 20, cur_path= 1
+79.22, DOWN, down_id= 25, quality= 4, buffer_size= 20, down_path= 1.0
+81.04, DOWNF, down_id= 25, buffer_size= 32, cur_path= 2
+81.04, DOWN, down_id= 27, quality= 3, buffer_size= 32, down_path= 2.0
+81.44, PLAYF=19.0, buffer_size= 36
+81.44, PLAY=20, buffer_size= 20
+82.24, DOWNF, down_id= 27, buffer_size= 20, cur_path= 1
+82.24, DOWN, down_id= 26, quality= 4, buffer_size= 20, down_path= 1.0
+84.55, DOWNF, down_id= 26, buffer_size= 32, cur_path= 1
+**84.55, DOWN, down_id= 26, quality= 4, buffer_size= 32, down_path= 1.0
+85.44, PLAYF=20.0, buffer_size= 32
+85.44, PLAY=21, buffer_size= 20
+86.02, DOWNF, down_id= 26, buffer_size= 20, cur_path= 2
+**86.02, DOWN, down_id= 27, quality= 4, buffer_size= 20, down_path= 2.0
+86.81, DOWNF, down_id= 27, buffer_size= 28, cur_path= 1
+**86.81, DOWN, down_id= 27, quality= 4, buffer_size= 28, down_path= 1.0
+89.44, PLAYF=21.0, buffer_size= 28
+89.44, PLAY=22, buffer_size= 20
+89.61, DOWNF, down_id= 27, buffer_size= 20, cur_path= 1
+**89.61, DOWN, down_id= 28, quality= 4, buffer_size= 20, down_path= 1.0
+93.44, PLAYF=22.0, buffer_size= 28
+93.44, PLAY=23, buffer_size= 16
+95.58, DOWNF, down_id= 28, buffer_size= 16, cur_path= 2
+95.58, DOWN, down_id= 29, quality= 4, buffer_size= 16, down_path= 2.0
+96.63, DOWNF, down_id= 29, buffer_size= 28, cur_path= 1
+96.63, DOWN, down_id= 26, quality= 3, buffer_size= 28, down_path= 1.0
+97.44, PLAYF=23.0, buffer_size= 28
+97.44, PLAY=24, buffer_size= 16
+99.09, DOWNF, down_id= 26, buffer_size= 16, cur_path= 1
+**99.09, DOWN, down_id= 30, quality= 4, buffer_size= 16, down_path= 1.0
+101.44, PLAYF=24.0, buffer_size= 28
+101.44, PLAY=25, buffer_size= 12
+104.13, DOWNF, down_id= 30, buffer_size= 12, cur_path= 1
+104.13, DOWN, down_id= 31, quality= 4, buffer_size= 12, down_path= 1.0
+105.44, PLAYF=25.0, buffer_size= 28
+105.44, PLAY=26, buffer_size= 12
+108.64, DOWNF, down_id= 31, buffer_size= 12, cur_path= 1
+108.64, DOWN, down_id= 32, quality= 4, buffer_size= 12, down_path= 1.0
+109.44, PLAYF=26.0, buffer_size= 28
+109.44, PLAY=27, buffer_size= 12
+111.73, DOWNF, down_id= 32, buffer_size= 12, cur_path= 2
+111.73, DOWN, down_id= 31, quality= 2, buffer_size= 12, down_path= 2.0
+113.44, PLAYF=27.0, buffer_size= 24
+113.44, PLAY=28, buffer_size= 12
+117.44, PLAYF=28.0, buffer_size= 12
+117.44, PLAY=29, buffer_size= 8
+119.24, DOWNF, down_id= 31, buffer_size= 8, cur_path= 2
+**119.24, DOWN, down_id= 33, quality= 1, buffer_size= 8, down_path= 2.0
+120.5, DOWNF, down_id= 33, buffer_size= 20, cur_path= 1
+120.5, DOWN, down_id= 32, quality= 3, buffer_size= 20, down_path= 1.0
+121.44, PLAYF=29.0, buffer_size= 20
+121.44, PLAY=30, buffer_size= 8
+123.0, DOWNF, down_id= 32, buffer_size= 8, cur_path= 2
+**123.0, DOWN, down_id= 33, quality= 3, buffer_size= 8, down_path= 2.0
+123.74, DOWNF, down_id= 33, buffer_size= 16, cur_path= 1
+**123.74, DOWN, down_id= 33, quality= 3, buffer_size= 16, down_path= 1.0
+125.44, PLAYF=30.0, buffer_size= 16
+125.44, PLAY=31, buffer_size= 8
+126.26, DOWNF, down_id= 33, buffer_size= 8, cur_path= 1
+**126.26, DOWN, down_id= 34, quality= 3, buffer_size= 8, down_path= 1.0
+127.79, DOWNF, down_id= 34, buffer_size= 16, cur_path= 2
+127.79, DOWN, down_id= 35, quality= 2, buffer_size= 16, down_path= 2.0
+129.44, PLAYF=31.0, buffer_size= 20
+129.44, PLAY=32, buffer_size= 4
+129.85, DOWNF, down_id= 35, buffer_size= 4, cur_path= 1
+129.85, DOWN, down_id= 38, quality= 4, buffer_size= 4, down_path= 1.0
+130.51, DOWNF, down_id= 38, buffer_size= 20, cur_path= 2
+130.51, DOWN, down_id= 36, quality= 2, buffer_size= 20, down_path= 2.0
+132.54, DOWNF, down_id= 36, buffer_size= 24, cur_path= 2
+132.54, DOWN, down_id= 39, quality= 4, buffer_size= 24, down_path= 2.0
+133.44, PLAYF=32.0, buffer_size= 28
+133.44, PLAY=33, buffer_size= 12
+134.97, DOWNF, down_id= 39, buffer_size= 12, cur_path= 2
+134.97, DOWN, down_id= 40, quality= 4, buffer_size= 12, down_path= 2.0
+135.47, DOWNF, down_id= 40, buffer_size= 28, cur_path= 1
+135.47, DOWN, down_id= 40, quality= 4, buffer_size= 28, down_path= 1.0
+137.44, PLAYF=33.0, buffer_size= 28
+137.44, PLAY=34, buffer_size= 16
+139.51, DOWNF, down_id= 40, buffer_size= 16, cur_path= 2
+**139.52, DOWN, down_id= 37, quality= 4, buffer_size= 16, down_path= 2.0
+141.44, PLAYF=34.0, buffer_size= 28
+141.44, PLAY=35, buffer_size= 16
+145.28, DOWNF, down_id= 37, buffer_size= 16, cur_path= 2
+145.28, DOWN, down_id= 41, quality= 4, buffer_size= 16, down_path= 2.0
+145.44, PLAYF=35.0, buffer_size= 28
+145.44, PLAY=36, buffer_size= 16
+149.38, DOWNF, down_id= 41, buffer_size= 16, cur_path= 1
+149.38, DOWN, down_id= 39, quality= 4, buffer_size= 16, down_path= 1.0
+149.44, PLAYF=36.0, buffer_size= 24
+149.44, PLAY=37, buffer_size= 12
+152.38, DOWNF, down_id= 39, buffer_size= 12, cur_path= 1
+**152.38, DOWN, down_id= 43, quality= 4, buffer_size= 12, down_path= 1.0
+153.44, PLAYF=37.0, buffer_size= 24
+153.44, PLAY=38, buffer_size= 8
+153.51, DOWNF, down_id= 43, buffer_size= 8, cur_path= 2
+153.51, DOWN, down_id= 44, quality= 4, buffer_size= 8, down_path= 2.0
+155.49, DOWNF, down_id= 44, buffer_size= 24, cur_path= 1
+155.49, DOWN, down_id= 44, quality= 4, buffer_size= 24, down_path= 1.0
+157.44, PLAYF=38.0, buffer_size= 24
+157.44, PLAY=39, buffer_size= 12
+160.67, DOWNF, down_id= 44, buffer_size= 12, cur_path= 1
+**160.67, DOWN, down_id= 45, quality= 4, buffer_size= 12, down_path= 1.0
+161.44, PLAYF=39.0, buffer_size= 24
+161.44, PLAY=40, buffer_size= 12
+161.91, DOWNF, down_id= 45, buffer_size= 12, cur_path= 2
+161.91, DOWN, down_id= 42, quality= 1, buffer_size= 12, down_path= 2.0
+163.84, DOWNF, down_id= 42, buffer_size= 24, cur_path= 2
+163.84, DOWN, down_id= 46, quality= 4, buffer_size= 24, down_path= 2.0
+165.44, PLAYF=40.0, buffer_size= 28
+165.44, PLAY=41, buffer_size= 12
+165.55, DOWNF, down_id= 46, buffer_size= 12, cur_path= 1
+165.55, DOWN, down_id= 47, quality= 4, buffer_size= 12, down_path= 1.0
+167.79, DOWNF, down_id= 47, buffer_size= 28, cur_path= 1
+167.79, DOWN, down_id= 47, quality= 4, buffer_size= 28, down_path= 1.0
+169.44, PLAYF=41.0, buffer_size= 28
+169.44, PLAY=42, buffer_size= 16
+172.43, DOWNF, down_id= 47, buffer_size= 16, cur_path= 1
+**172.43, DOWN, down_id= 48, quality= 4, buffer_size= 16, down_path= 1.0
+173.44, PLAYF=42.0, buffer_size= 28
+173.44, PLAY=43, buffer_size= 12
+177.44, PLAYF=43.0, buffer_size= 12
+177.44, PLAY=44, buffer_size= 8
+178.16, DOWNF, down_id= 48, buffer_size= 8, cur_path= 1
+178.17, DOWN, down_id= 50, quality= 4, buffer_size= 8, down_path= 1.0
+179.29, DOWNF, down_id= 50, buffer_size= 24, cur_path= 2
+179.29, DOWN, down_id= 52, quality= 3, buffer_size= 24, down_path= 2.0
+181.44, PLAYF=44.0, buffer_size= 28
+181.44, PLAY=45, buffer_size= 12
+182.83, DOWNF, down_id= 52, buffer_size= 12, cur_path= 1
+182.83, DOWN, down_id= 51, quality= 4, buffer_size= 12, down_path= 1.0
+185.44, PLAYF=45.0, buffer_size= 28
+185.44, PLAY=46, buffer_size= 12
+185.8, DOWNF, down_id= 51, buffer_size= 12, cur_path= 2
+185.8, DOWN, down_id= 49, quality= 3, buffer_size= 12, down_path= 2.0
+187.93, DOWNF, down_id= 49, buffer_size= 28, cur_path= 1
+187.93, DOWN, down_id= 52, quality= 4, buffer_size= 28, down_path= 1.0
+189.44, PLAYF=46.0, buffer_size= 28
+189.44, PLAY=47, buffer_size= 16
+193.25, DOWNF, down_id= 52, buffer_size= 16, cur_path= 1
+**193.25, DOWN, down_id= 53, quality= 4, buffer_size= 16, down_path= 1.0
+193.42, DOWNF, down_id= 53, buffer_size= 28, cur_path= 2
+193.42, DOWN, down_id= 53, quality= 4, buffer_size= 28, down_path= 2.0
+193.44, PLAYF=47.0, buffer_size= 28
+193.44, PLAY=48, buffer_size= 16
+197.44, PLAYF=48.0, buffer_size= 16
+197.44, PLAY=49, buffer_size= 12
+199.64, DOWNF, down_id= 53, buffer_size= 12, cur_path= 1
+**199.64, DOWN, down_id= 55, quality= 4, buffer_size= 12, down_path= 1.0
+201.44, PLAYF=49.0, buffer_size= 24
+201.44, PLAY=50, buffer_size= 12
+202.65, DOWNF, down_id= 55, buffer_size= 12, cur_path= 1
+202.65, DOWN, down_id= 56, quality= 4, buffer_size= 12, down_path= 1.0
+204.46, DOWNF, down_id= 56, buffer_size= 24, cur_path= 2
+204.46, DOWN, down_id= 57, quality= 5, buffer_size= 24, down_path= 2.0
+205.44, PLAYF=50.0, buffer_size= 28
+205.44, PLAY=51, buffer_size= 12
+207.26, DOWNF, down_id= 57, buffer_size= 12, cur_path= 1
+207.26, DOWN, down_id= 54, quality= 3, buffer_size= 12, down_path= 1.0
+209.44, PLAYF=51.0, buffer_size= 28
+209.44, PLAY=52, buffer_size= 12
+210.04, DOWNF, down_id= 54, buffer_size= 12, cur_path= 1
+210.04, DOWN, down_id= 54, quality= 0, buffer_size= 12, down_path= 1.0
+210.67, DOWNF, down_id= 54, buffer_size= 24, cur_path= 1
+**210.67, DOWN, down_id= 54, quality= 0, buffer_size= 24, down_path= 1.0
+211.28, DOWNF, down_id= 54, buffer_size= 24, cur_path= 1
+**211.28, DOWN, down_id= 54, quality= 0, buffer_size= 24, down_path= 1.0
+211.84, DOWNF, down_id= 54, buffer_size= 24, cur_path= 1
+**211.84, DOWN, down_id= 54, quality= 0, buffer_size= 24, down_path= 1.0
+212.33, DOWNF, down_id= 54, buffer_size= 24, cur_path= 1
+**212.33, DOWN, down_id= 54, quality= 0, buffer_size= 24, down_path= 1.0
+212.79, DOWNF, down_id= 54, buffer_size= 24, cur_path= 1
+**212.79, DOWN, down_id= 54, quality= 0, buffer_size= 24, down_path= 1.0
+213.25, DOWNF, down_id= 54, buffer_size= 24, cur_path= 1
+**213.25, DOWN, down_id= 54, quality= 0, buffer_size= 24, down_path= 1.0
+213.44, PLAYF=52.0, buffer_size= 24
+213.44, PLAY=53, buffer_size= 12
+213.69, DOWNF, down_id= 54, buffer_size= 12, cur_path= 1
+**213.69, DOWN, down_id= 54, quality= 1, buffer_size= 12, down_path= 1.0
+214.73, DOWNF, down_id= 54, buffer_size= 20, cur_path= 1
+**214.73, DOWN, down_id= 54, quality= 1, buffer_size= 20, down_path= 1.0
+215.99, DOWNF, down_id= 54, buffer_size= 20, cur_path= 1
+**215.99, DOWN, down_id= 54, quality= 1, buffer_size= 20, down_path= 1.0
+217.04, DOWNF, down_id= 54, buffer_size= 20, cur_path= 1
+**217.04, DOWN, down_id= 54, quality= 1, buffer_size= 20, down_path= 1.0
+217.44, PLAYF=53.0, buffer_size= 20
+217.44, PLAY=54, buffer_size= 8
+218.33, DOWNF, down_id= 54, buffer_size= 8, cur_path= 1
+**218.34, DOWN, down_id= 55, quality= 1, buffer_size= 8, down_path= 1.0
+219.27, DOWNF, down_id= 55, buffer_size= 16, cur_path= 1
+**219.27, DOWN, down_id= 55, quality= 1, buffer_size= 16, down_path= 1.0
+220.36, DOWNF, down_id= 55, buffer_size= 16, cur_path= 1
+**220.36, DOWN, down_id= 55, quality= 1, buffer_size= 16, down_path= 1.0
+221.13, DOWNF, down_id= 55, buffer_size= 16, cur_path= 1
+**221.13, DOWN, down_id= 55, quality= 1, buffer_size= 16, down_path= 1.0
+221.44, PLAYF=54.0, buffer_size= 16
+221.44, PLAY=55, buffer_size= 4
+221.89, DOWNF, down_id= 55, buffer_size= 4, cur_path= 1
+**221.89, DOWN, down_id= 56, quality= 0, buffer_size= 4, down_path= 1.0
+222.36, DOWNF, down_id= 56, buffer_size= 12, cur_path= 1
+**222.36, DOWN, down_id= 56, quality= 0, buffer_size= 12, down_path= 1.0
+222.85, DOWNF, down_id= 56, buffer_size= 12, cur_path= 1
+**222.85, DOWN, down_id= 56, quality= 0, buffer_size= 12, down_path= 1.0
+223.35, DOWNF, down_id= 56, buffer_size= 12, cur_path= 1
+**223.35, DOWN, down_id= 56, quality= 0, buffer_size= 12, down_path= 1.0
+223.85, DOWNF, down_id= 56, buffer_size= 12, cur_path= 1
+**223.85, DOWN, down_id= 56, quality= 0, buffer_size= 12, down_path= 1.0
+224.38, DOWNF, down_id= 56, buffer_size= 12, cur_path= 1
+**224.38, DOWN, down_id= 56, quality= 0, buffer_size= 12, down_path= 1.0
+224.92, DOWNF, down_id= 56, buffer_size= 12, cur_path= 1
+**224.92, DOWN, down_id= 56, quality= 0, buffer_size= 12, down_path= 1.0
+225.44, PLAYF=55.0, buffer_size= 12
+225.44, PLAY=56, buffer_size= 0
+225.55, DOWNF, down_id= 56, buffer_size= 0, cur_path= 1
+**225.55, DOWN, down_id= 58, quality= 1, buffer_size= 0, down_path= 1.0
+226.9, DOWNF, down_id= 58, buffer_size= 12, cur_path= 2
+226.9, DOWN, down_id= 58, quality= 1, buffer_size= 12, down_path= 2.0
+226.91, DOWNF, down_id= 58, buffer_size= 12, cur_path= 1
+**226.91, DOWN, down_id= 58, quality= 1, buffer_size= 12, down_path= 1.0
+228.44, DOWNF, down_id= 58, buffer_size= 12, cur_path= 1
+**228.44, DOWN, down_id= 58, quality= 1, buffer_size= 12, down_path= 1.0
+229.44, PLAYF=56.0, buffer_size= 12
+229.44, PLAY=57, buffer_size= 4
+229.89, DOWNF, down_id= 58, buffer_size= 4, cur_path= 1
+**229.89, DOWN, down_id= 58, quality= 0, buffer_size= 4, down_path= 1.0
+230.65, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
+**230.65, DOWN, down_id= 58, quality= 0, buffer_size= 8, down_path= 1.0
+231.81, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
+**231.81, DOWN, down_id= 58, quality= 0, buffer_size= 8, down_path= 1.0
+232.4, DOWNF, down_id= 58, buffer_size= 8, cur_path= 2
+**232.4, DOWN, down_id= 58, quality= 0, buffer_size= 8, down_path= 2.0
+232.59, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
+**232.59, DOWN, down_id= 58, quality= 0, buffer_size= 8, down_path= 1.0
+233.22, DOWNF, down_id= 58, buffer_size= 8, cur_path= 1
+**233.22, DOWN, down_id= 58, quality= 0, buffer_size= 8, down_path= 1.0
+233.44, PLAYF=57.0, buffer_size= 8
+233.44, PLAY=58, buffer_size= 0
+233.52, DOWNF, down_id= 58, buffer_size= 0, cur_path= 2
+**233.52, DOWN, down_id= 59, quality= 0, buffer_size= 0, down_path= 2.0
+233.78, DOWNF, down_id= 59, buffer_size= 8, cur_path= 1
+233.83, SLEEPF, buffer_size= 8, cur_path= 1
+233.88, SLEEPF, buffer_size= 8, cur_path= 1
+233.93, SLEEPF, buffer_size= 8, cur_path= 1
+233.98, SLEEPF, buffer_size= 8, cur_path= 1
+234.03, SLEEPF, buffer_size= 8, cur_path= 1
+234.08, SLEEPF, buffer_size= 8, cur_path= 1
+234.13, SLEEPF, buffer_size= 8, cur_path= 1
+234.18, SLEEPF, buffer_size= 8, cur_path= 1
+234.23, SLEEPF, buffer_size= 8, cur_path= 1
+234.28, SLEEPF, buffer_size= 8, cur_path= 1
+234.33, SLEEPF, buffer_size= 8, cur_path= 1
+234.38, SLEEPF, buffer_size= 8, cur_path= 1
+234.43, SLEEPF, buffer_size= 8, cur_path= 1
+234.48, SLEEPF, buffer_size= 8, cur_path= 1
+234.53, SLEEPF, buffer_size= 8, cur_path= 1
+234.58, SLEEPF, buffer_size= 8, cur_path= 1
+234.63, SLEEPF, buffer_size= 8, cur_path= 1
+234.68, SLEEPF, buffer_size= 8, cur_path= 1
+234.73, SLEEPF, buffer_size= 8, cur_path= 1
+234.78, SLEEPF, buffer_size= 8, cur_path= 1
+234.83, SLEEPF, buffer_size= 8, cur_path= 1
+234.88, SLEEPF, buffer_size= 8, cur_path= 1
+234.93, SLEEPF, buffer_size= 8, cur_path= 1
+234.98, SLEEPF, buffer_size= 8, cur_path= 1
+235.03, SLEEPF, buffer_size= 8, cur_path= 1
+235.08, SLEEPF, buffer_size= 8, cur_path= 1
+235.13, SLEEPF, buffer_size= 8, cur_path= 1
+235.18, SLEEPF, buffer_size= 8, cur_path= 1
+235.23, SLEEPF, buffer_size= 8, cur_path= 1
+235.28, SLEEPF, buffer_size= 8, cur_path= 1
+235.33, SLEEPF, buffer_size= 8, cur_path= 1
+235.33, DOWNF, down_id= 59, buffer_size= 8, cur_path= 2
+235.38, SLEEPF, buffer_size= 8, cur_path= 1
+235.38, SLEEPF, buffer_size= 8, cur_path= 2
+235.43, SLEEPF, buffer_size= 8, cur_path= 1
+235.43, SLEEPF, buffer_size= 8, cur_path= 2
+235.48, SLEEPF, buffer_size= 8, cur_path= 1
+235.48, SLEEPF, buffer_size= 8, cur_path= 2
+235.53, SLEEPF, buffer_size= 8, cur_path= 1
+235.53, SLEEPF, buffer_size= 8, cur_path= 2
+235.58, SLEEPF, buffer_size= 8, cur_path= 1
+235.58, SLEEPF, buffer_size= 8, cur_path= 2
+235.63, SLEEPF, buffer_size= 8, cur_path= 1
+235.63, SLEEPF, buffer_size= 8, cur_path= 2
+235.68, SLEEPF, buffer_size= 8, cur_path= 1
+235.68, SLEEPF, buffer_size= 8, cur_path= 2
+235.73, SLEEPF, buffer_size= 8, cur_path= 1
+235.73, SLEEPF, buffer_size= 8, cur_path= 2
+235.78, SLEEPF, buffer_size= 8, cur_path= 1
+235.78, SLEEPF, buffer_size= 8, cur_path= 2
+235.83, SLEEPF, buffer_size= 8, cur_path= 1
+235.83, SLEEPF, buffer_size= 8, cur_path= 2
+235.88, SLEEPF, buffer_size= 8, cur_path= 1
+235.88, SLEEPF, buffer_size= 8, cur_path= 2
+235.93, SLEEPF, buffer_size= 8, cur_path= 1
+235.93, SLEEPF, buffer_size= 8, cur_path= 2
+235.98, SLEEPF, buffer_size= 8, cur_path= 1
+235.98, SLEEPF, buffer_size= 8, cur_path= 2
+236.03, SLEEPF, buffer_size= 8, cur_path= 1
+236.03, SLEEPF, buffer_size= 8, cur_path= 2
+236.08, SLEEPF, buffer_size= 8, cur_path= 1
+236.08, SLEEPF, buffer_size= 8, cur_path= 2
+236.13, SLEEPF, buffer_size= 8, cur_path= 1
+236.13, SLEEPF, buffer_size= 8, cur_path= 2
+236.18, SLEEPF, buffer_size= 8, cur_path= 1
+236.18, SLEEPF, buffer_size= 8, cur_path= 2
+236.23, SLEEPF, buffer_size= 8, cur_path= 1
+236.23, SLEEPF, buffer_size= 8, cur_path= 2
+236.28, SLEEPF, buffer_size= 8, cur_path= 1
+236.28, SLEEPF, buffer_size= 8, cur_path= 2
+236.33, SLEEPF, buffer_size= 8, cur_path= 1
+236.33, SLEEPF, buffer_size= 8, cur_path= 2
+236.38, SLEEPF, buffer_size= 8, cur_path= 1
+236.38, SLEEPF, buffer_size= 8, cur_path= 2
+236.43, SLEEPF, buffer_size= 8, cur_path= 1
+236.43, SLEEPF, buffer_size= 8, cur_path= 2
+236.48, SLEEPF, buffer_size= 8, cur_path= 1
+236.48, SLEEPF, buffer_size= 8, cur_path= 2
+236.53, SLEEPF, buffer_size= 8, cur_path= 1
+236.53, SLEEPF, buffer_size= 8, cur_path= 2
+236.58, SLEEPF, buffer_size= 8, cur_path= 1
+236.58, SLEEPF, buffer_size= 8, cur_path= 2
+236.63, SLEEPF, buffer_size= 8, cur_path= 1
+236.63, SLEEPF, buffer_size= 8, cur_path= 2
+236.68, SLEEPF, buffer_size= 8, cur_path= 1
+236.68, SLEEPF, buffer_size= 8, cur_path= 2
+236.73, SLEEPF, buffer_size= 8, cur_path= 1
+236.73, SLEEPF, buffer_size= 8, cur_path= 2
+236.78, SLEEPF, buffer_size= 8, cur_path= 1
+236.78, SLEEPF, buffer_size= 8, cur_path= 2
+236.83, SLEEPF, buffer_size= 8, cur_path= 1
+236.83, SLEEPF, buffer_size= 8, cur_path= 2
+236.88, SLEEPF, buffer_size= 8, cur_path= 1
+236.88, SLEEPF, buffer_size= 8, cur_path= 2
+236.93, SLEEPF, buffer_size= 8, cur_path= 1
+236.93, SLEEPF, buffer_size= 8, cur_path= 2
+236.98, SLEEPF, buffer_size= 8, cur_path= 1
+236.98, SLEEPF, buffer_size= 8, cur_path= 2
+237.03, SLEEPF, buffer_size= 8, cur_path= 1
+237.03, SLEEPF, buffer_size= 8, cur_path= 2
+237.08, SLEEPF, buffer_size= 8, cur_path= 1
+237.08, SLEEPF, buffer_size= 8, cur_path= 2
+237.13, SLEEPF, buffer_size= 8, cur_path= 1
+237.13, SLEEPF, buffer_size= 8, cur_path= 2
+237.18, SLEEPF, buffer_size= 8, cur_path= 1
+237.18, SLEEPF, buffer_size= 8, cur_path= 2
+237.23, SLEEPF, buffer_size= 8, cur_path= 1
+237.23, SLEEPF, buffer_size= 8, cur_path= 2
+237.28, SLEEPF, buffer_size= 8, cur_path= 1
+237.28, SLEEPF, buffer_size= 8, cur_path= 2
+237.33, SLEEPF, buffer_size= 8, cur_path= 1
+237.33, SLEEPF, buffer_size= 8, cur_path= 2
+237.38, SLEEPF, buffer_size= 8, cur_path= 1
+237.38, SLEEPF, buffer_size= 8, cur_path= 2
+237.43, SLEEPF, buffer_size= 8, cur_path= 1
+237.43, SLEEPF, buffer_size= 8, cur_path= 2
+237.44, PLAYF=58.0, buffer_size= 8
+237.44, PLAY=59, buffer_size= 0
+237.48, SLEEPF, buffer_size= 0, cur_path= 1
+237.48, SLEEPF, buffer_size= 0, cur_path= 2
+237.53, SLEEPF, buffer_size= 0, cur_path= 1
+237.53, SLEEPF, buffer_size= 0, cur_path= 2
+237.58, SLEEPF, buffer_size= 0, cur_path= 1
+237.58, SLEEPF, buffer_size= 0, cur_path= 2
+237.63, SLEEPF, buffer_size= 0, cur_path= 1
+237.63, SLEEPF, buffer_size= 0, cur_path= 2
+237.68, SLEEPF, buffer_size= 0, cur_path= 1
+237.68, SLEEPF, buffer_size= 0, cur_path= 2
+237.73, SLEEPF, buffer_size= 0, cur_path= 1
+237.73, SLEEPF, buffer_size= 0, cur_path= 2
+237.78, SLEEPF, buffer_size= 0, cur_path= 1
+237.78, SLEEPF, buffer_size= 0, cur_path= 2
+237.83, SLEEPF, buffer_size= 0, cur_path= 1
+237.83, SLEEPF, buffer_size= 0, cur_path= 2
+237.88, SLEEPF, buffer_size= 0, cur_path= 1
+237.88, SLEEPF, buffer_size= 0, cur_path= 2
+237.93, SLEEPF, buffer_size= 0, cur_path= 1
+237.93, SLEEPF, buffer_size= 0, cur_path= 2
+237.98, SLEEPF, buffer_size= 0, cur_path= 1
+237.98, SLEEPF, buffer_size= 0, cur_path= 2
+238.03, SLEEPF, buffer_size= 0, cur_path= 1
+238.03, SLEEPF, buffer_size= 0, cur_path= 2
+238.08, SLEEPF, buffer_size= 0, cur_path= 1
+238.08, SLEEPF, buffer_size= 0, cur_path= 2
+238.13, SLEEPF, buffer_size= 0, cur_path= 1
+238.13, SLEEPF, buffer_size= 0, cur_path= 2
+238.18, SLEEPF, buffer_size= 0, cur_path= 1
+238.18, SLEEPF, buffer_size= 0, cur_path= 2
+238.23, SLEEPF, buffer_size= 0, cur_path= 1
+238.23, SLEEPF, buffer_size= 0, cur_path= 2
+238.28, SLEEPF, buffer_size= 0, cur_path= 1
+238.28, SLEEPF, buffer_size= 0, cur_path= 2
+238.33, SLEEPF, buffer_size= 0, cur_path= 1
+238.33, SLEEPF, buffer_size= 0, cur_path= 2
+238.38, SLEEPF, buffer_size= 0, cur_path= 1
+238.38, SLEEPF, buffer_size= 0, cur_path= 2
+238.43, SLEEPF, buffer_size= 0, cur_path= 1
+238.43, SLEEPF, buffer_size= 0, cur_path= 2
+238.48, SLEEPF, buffer_size= 0, cur_path= 1
+238.48, SLEEPF, buffer_size= 0, cur_path= 2
+238.53, SLEEPF, buffer_size= 0, cur_path= 1
+238.53, SLEEPF, buffer_size= 0, cur_path= 2
+238.58, SLEEPF, buffer_size= 0, cur_path= 1
+238.58, SLEEPF, buffer_size= 0, cur_path= 2
+238.63, SLEEPF, buffer_size= 0, cur_path= 1
+238.63, SLEEPF, buffer_size= 0, cur_path= 2
+238.68, SLEEPF, buffer_size= 0, cur_path= 1
+238.68, SLEEPF, buffer_size= 0, cur_path= 2
+238.73, SLEEPF, buffer_size= 0, cur_path= 1
+238.73, SLEEPF, buffer_size= 0, cur_path= 2
+238.78, SLEEPF, buffer_size= 0, cur_path= 1
+238.78, SLEEPF, buffer_size= 0, cur_path= 2
+238.83, SLEEPF, buffer_size= 0, cur_path= 1
+238.83, SLEEPF, buffer_size= 0, cur_path= 2
+238.88, SLEEPF, buffer_size= 0, cur_path= 1
+238.88, SLEEPF, buffer_size= 0, cur_path= 2
+238.93, SLEEPF, buffer_size= 0, cur_path= 1
+238.93, SLEEPF, buffer_size= 0, cur_path= 2
+238.98, SLEEPF, buffer_size= 0, cur_path= 1
+238.98, SLEEPF, buffer_size= 0, cur_path= 2
+239.03, SLEEPF, buffer_size= 0, cur_path= 1
+239.03, SLEEPF, buffer_size= 0, cur_path= 2
+239.08, SLEEPF, buffer_size= 0, cur_path= 1
+239.08, SLEEPF, buffer_size= 0, cur_path= 2
+239.13, SLEEPF, buffer_size= 0, cur_path= 1
+239.13, SLEEPF, buffer_size= 0, cur_path= 2
+239.18, SLEEPF, buffer_size= 0, cur_path= 1
+239.18, SLEEPF, buffer_size= 0, cur_path= 2
+239.23, SLEEPF, buffer_size= 0, cur_path= 1
+239.23, SLEEPF, buffer_size= 0, cur_path= 2
+239.28, SLEEPF, buffer_size= 0, cur_path= 1
+239.28, SLEEPF, buffer_size= 0, cur_path= 2
+239.33, SLEEPF, buffer_size= 0, cur_path= 1
+239.33, SLEEPF, buffer_size= 0, cur_path= 2
+239.38, SLEEPF, buffer_size= 0, cur_path= 1
+239.38, SLEEPF, buffer_size= 0, cur_path= 2
+239.43, SLEEPF, buffer_size= 0, cur_path= 1
+239.43, SLEEPF, buffer_size= 0, cur_path= 2
+239.48, SLEEPF, buffer_size= 0, cur_path= 1
+239.48, SLEEPF, buffer_size= 0, cur_path= 2
+239.53, SLEEPF, buffer_size= 0, cur_path= 1
+239.53, SLEEPF, buffer_size= 0, cur_path= 2
+239.58, SLEEPF, buffer_size= 0, cur_path= 1
+239.58, SLEEPF, buffer_size= 0, cur_path= 2
+239.63, SLEEPF, buffer_size= 0, cur_path= 1
+239.63, SLEEPF, buffer_size= 0, cur_path= 2
+239.68, SLEEPF, buffer_size= 0, cur_path= 1
+239.68, SLEEPF, buffer_size= 0, cur_path= 2
+239.73, SLEEPF, buffer_size= 0, cur_path= 1
+239.73, SLEEPF, buffer_size= 0, cur_path= 2
+239.78, SLEEPF, buffer_size= 0, cur_path= 1
+239.78, SLEEPF, buffer_size= 0, cur_path= 2
+239.83, SLEEPF, buffer_size= 0, cur_path= 1
+239.83, SLEEPF, buffer_size= 0, cur_path= 2
+239.88, SLEEPF, buffer_size= 0, cur_path= 1
+239.88, SLEEPF, buffer_size= 0, cur_path= 2
+239.93, SLEEPF, buffer_size= 0, cur_path= 1
+239.93, SLEEPF, buffer_size= 0, cur_path= 2
+239.98, SLEEPF, buffer_size= 0, cur_path= 1
+239.98, SLEEPF, buffer_size= 0, cur_path= 2
+240.03, SLEEPF, buffer_size= 0, cur_path= 1
+240.03, SLEEPF, buffer_size= 0, cur_path= 2
+240.08, SLEEPF, buffer_size= 0, cur_path= 1
+240.08, SLEEPF, buffer_size= 0, cur_path= 2
+240.13, SLEEPF, buffer_size= 0, cur_path= 1
+240.13, SLEEPF, buffer_size= 0, cur_path= 2
+240.18, SLEEPF, buffer_size= 0, cur_path= 1
+240.18, SLEEPF, buffer_size= 0, cur_path= 2
+240.23, SLEEPF, buffer_size= 0, cur_path= 1
+240.23, SLEEPF, buffer_size= 0, cur_path= 2
+240.28, SLEEPF, buffer_size= 0, cur_path= 1
+240.28, SLEEPF, buffer_size= 0, cur_path= 2
+240.33, SLEEPF, buffer_size= 0, cur_path= 1
+240.33, SLEEPF, buffer_size= 0, cur_path= 2
+240.38, SLEEPF, buffer_size= 0, cur_path= 1
+240.38, SLEEPF, buffer_size= 0, cur_path= 2
+240.43, SLEEPF, buffer_size= 0, cur_path= 1
+240.43, SLEEPF, buffer_size= 0, cur_path= 2
+240.48, SLEEPF, buffer_size= 0, cur_path= 1
+240.48, SLEEPF, buffer_size= 0, cur_path= 2
+240.53, SLEEPF, buffer_size= 0, cur_path= 1
+240.53, SLEEPF, buffer_size= 0, cur_path= 2
+240.58, SLEEPF, buffer_size= 0, cur_path= 1
+240.58, SLEEPF, buffer_size= 0, cur_path= 2
+240.63, SLEEPF, buffer_size= 0, cur_path= 1
+240.63, SLEEPF, buffer_size= 0, cur_path= 2
+240.68, SLEEPF, buffer_size= 0, cur_path= 1
+240.68, SLEEPF, buffer_size= 0, cur_path= 2
+240.73, SLEEPF, buffer_size= 0, cur_path= 1
+240.73, SLEEPF, buffer_size= 0, cur_path= 2
+240.78, SLEEPF, buffer_size= 0, cur_path= 1
+240.78, SLEEPF, buffer_size= 0, cur_path= 2
+240.83, SLEEPF, buffer_size= 0, cur_path= 1
+240.83, SLEEPF, buffer_size= 0, cur_path= 2
+240.88, SLEEPF, buffer_size= 0, cur_path= 1
+240.88, SLEEPF, buffer_size= 0, cur_path= 2
+240.93, SLEEPF, buffer_size= 0, cur_path= 1
+240.93, SLEEPF, buffer_size= 0, cur_path= 2
+240.98, SLEEPF, buffer_size= 0, cur_path= 1
+240.98, SLEEPF, buffer_size= 0, cur_path= 2
+241.03, SLEEPF, buffer_size= 0, cur_path= 1
+241.03, SLEEPF, buffer_size= 0, cur_path= 2
+241.08, SLEEPF, buffer_size= 0, cur_path= 1
+241.08, SLEEPF, buffer_size= 0, cur_path= 2
+241.13, SLEEPF, buffer_size= 0, cur_path= 1
+241.13, SLEEPF, buffer_size= 0, cur_path= 2
+241.18, SLEEPF, buffer_size= 0, cur_path= 1
+241.18, SLEEPF, buffer_size= 0, cur_path= 2
+241.23, SLEEPF, buffer_size= 0, cur_path= 1
+241.23, SLEEPF, buffer_size= 0, cur_path= 2
+241.28, SLEEPF, buffer_size= 0, cur_path= 1
+241.28, SLEEPF, buffer_size= 0, cur_path= 2
+241.33, SLEEPF, buffer_size= 0, cur_path= 1
+241.33, SLEEPF, buffer_size= 0, cur_path= 2
+241.38, SLEEPF, buffer_size= 0, cur_path= 1
+241.38, SLEEPF, buffer_size= 0, cur_path= 2
+241.43, SLEEPF, buffer_size= 0, cur_path= 1
+241.43, SLEEPF, buffer_size= 0, cur_path= 2
+241.44, PLAYF=59.0, buffer_size= 0

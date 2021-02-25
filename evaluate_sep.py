@@ -109,7 +109,7 @@ agent_rebuf = np.asarray(agent_rebuf)
 agent_rebuf = np.average(agent_rebuf)
 rebuf_list.append(agent_rebuf)
 
-# evaluation for smooth throughput
+# evaluation for smooth_evaluate throughput
 state = net_env.reset()
 ep = 0
 
@@ -211,7 +211,7 @@ ax.set_xticks(ind + width)
 ax.set_xticklabels(('SGD','A2C','Smooth','BOLA'))
 
 plt.ylabel("total score")
-ax.legend((p1[0], p2[0], p3[0]), ('utility score','smooth penalty','rebuf penalty'))
+ax.legend((p1[0], p2[0], p3[0]), ('utility score','smooth_evaluate penalty','rebuf penalty'))
 plt.show()
 
 # plt.title("Performance CDF")
