@@ -117,7 +117,7 @@ def evaluate(env):
 
 
 if __name__ == '__main__':
-    print("seek", 18)
-    np.random.seed(18)
+    print("seek", 13)
+    np.random.seed(13)
     env = Env()
     evaluate(env)

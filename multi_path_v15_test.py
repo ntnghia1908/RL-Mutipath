@@ -10,6 +10,10 @@ import numpy as np
 np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
 import datetime
 
+
+reward_trace = [['reward_quality', 'smooth_penalty', 'rebuf_penalty', 'sum_reward']]
+
+
 def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
     total_reward = 0
     iter = 0
@@ -63,8 +67,6 @@ def play_video(env, TrainNet, TargetNet, epsilon, copy_step):
 
 
 def main():
-    reward_trace = np.array([['reward_quality', 'smooth_penalty', 'rebuf_penalty', 'sum_reward']])
-    # reward_trace= np.append(reward_trace,[['reward_quality', 'smooth_penalty', 'rebuf_penalty', 'sum_reward']])
     env = Env()
     gamma = 0.9
     copy_step = 25
@@ -105,29 +107,21 @@ def main():
         epsilon = 0.0
         decay = 1.0
         min_epsilon = 0.0
-        N = 5
+        N = 150
         file_name = 'lr45_decay99_batch200_fixtrace_v15'
         TrainNet.load_model(np.array([state], dtype='float32'), 'model/DQNmodel_{}.h5'.format(file_name))
         TargetNet.load_model(np.array([state], dtype='float32'), 'model/DQNmodel_{}.h5'.format(file_name))
         file_name = file_name+'_test'
 
     print('epoch', 'reward', 'quality_reward', 'smooth_reward', 'buffering_reward')
-    qua_rw = []
-    smth_rw = []
-    rebuffering_rw =[]
-    total_rewards=[]
     for n in range(N):
         epoch.append(n)
         epsilon = max(min_epsilon, epsilon * decay)
         total_reward, losses, quality_rw, smooth_rw, buffering_rw = play_video(env, TrainNet, TargetNet, epsilon, copy_step)
-        # total_rewards = np.append(total_rewards, [total_reward])
-        # avg_reward = total_rewards[max(0, n - 100):(n + 1)].mean()
-        # avg_rewards.append(avg_reward)
-        reward_trace = np.append(reward_trace,[quality_rw, smooth_rw, buffering_rw, total_reward])
-        qua_rw.append(quality_rw)
-        smth_rw.append(smth_rw)
-        rebuffering_rw.append(buffering_rw)
-        total_rewards.append(total_reward)
+        total_rewards = np.append(total_rewards, [total_reward])
+        avg_reward = total_rewards[max(0, n - 100):(n + 1)].mean()
+        avg_rewards.append(avg_reward)
+        reward_trace.append([quality_rw, smooth_rw, buffering_rw, total_reward, avg_reward])
 
 
         print(n, total_rewards[-1], quality_rw, smooth_rw, buffering_rw)
@@ -147,14 +141,10 @@ def main():
             if n % 25 == 0 and not test:
                 TrainNet.save_model("model/DQNmodel_{}.h5".format(file_name))
 
+    if test:
+        write2csv('evaluateRL/rewards_track', reward_trace)
 
-    # if test:
-    #     # reward_trace =np.array(reward_trace)
-    #     # write2csv('evaluateRL/rewards_track', reward_trace)
-    return mean(qua_rw), mean(smth_rw), (rebuffering_rw), mean(total_rewards)
 
 if __name__ == '__main__':
-    for n in range(100):
-        np.random.seed(n)
-        q, s, rb, rw =main()
-        print(n, q, s, rb, rw)
+    np.random.seed(13)
+    main()

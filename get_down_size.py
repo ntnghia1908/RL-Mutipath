@@ -49,6 +49,6 @@ class video_list_collector():
 
     def load(self):
         self.segment_trace = pickle.load(open(self.save_dir, 'rb'))
-        print('available bitrate level')
-        for k,v in self.segment_trace.items():
-            print('{0}bps'.format(k))
+        # print('available bitrate level')
+        # for k,v in self.segment_trace.items():
+        #     print('{0}bps'.format(k))
